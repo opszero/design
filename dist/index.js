@@ -81,7 +81,11 @@ function copyrightFooter() {
 					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
 						className: "col col--4",
 						children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
-							style: "display: flex; justify-content: center; gap: 1rem;",
+							style: {
+								display: "flex",
+								justifyContent: "center",
+								gap: "1rem"
+							},
 							children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("a", {
 								href: "https://www.linkedin.com/company/opszero/",
 								target: "_blank",
@@ -90,7 +94,7 @@ function copyrightFooter() {
 								children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
 									src: "/img/uploads/LinkedIn.svg",
 									alt: "LinkedIn",
-									style: "height: 28px;"
+									style: { height: "28px" }
 								})
 							}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("a", {
 								href: "https://github.com/opszero",
@@ -100,7 +104,7 @@ function copyrightFooter() {
 								children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
 									src: "/img/uploads/GitHub.svg",
 									alt: "GitHub",
-									style: "height: 28px;"
+									style: { height: "28px" }
 								})
 							})]
 						})

@@ -22,12 +22,30 @@ export function copyrightFooter(): string {
                             <p>©2016–{year} opsZero, LLC </p>
                         </div>
                         < div className="col col--4" >
-                            <div style="display: flex; justify-content: center; gap: 1rem;" >
-                                <a href="https://www.linkedin.com/company/opszero/" target="_blank" rel="noopener" title="LinkedIn" >
-                                    <img src="/img/uploads/LinkedIn.svg" alt="LinkedIn" style="height: 28px;" />
+                            <div style={{ display: "flex", justifyContent: "center", gap: "1rem" }}>
+                                <a
+                                    href="https://www.linkedin.com/company/opszero/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    title="LinkedIn"
+                                >
+                                    <img
+                                        src="/img/uploads/LinkedIn.svg"
+                                        alt="LinkedIn"
+                                        style={{ height: "28px" }}
+                                    />
                                 </a>
-                                < a href="https://github.com/opszero" target="_blank" rel="noopener" title="GitHub" >
-                                    <img src="/img/uploads/GitHub.svg" alt="GitHub" style="height: 28px;" />
+                                <a
+                                    href="https://github.com/opszero"
+                                    target="_blank"
+                                    rel="noopener"
+                                    title="GitHub"
+                                >
+                                    <img
+                                        src="/img/uploads/GitHub.svg"
+                                        alt="GitHub"
+                                        style={{ height: "28px" }}
+                                    />
                                 </a>
                             </div>
                         </div>
