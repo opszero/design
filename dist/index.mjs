@@ -34,7 +34,10 @@ function copyrightFooter() {
 			className: "container",
 			children: /* @__PURE__ */ jsxs("div", {
 				className: "row",
-				style: "align-items: center; text-align: center;",
+				style: {
+					alignItems: "center",
+					textAlign: "center"
+				},
 				children: [
 					/* @__PURE__ */ jsx("div", {
 						className: "col col--4",

@@ -57,7 +57,10 @@ function copyrightFooter() {
 			className: "container",
 			children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
 				className: "row",
-				style: "align-items: center; text-align: center;",
+				style: {
+					alignItems: "center",
+					textAlign: "center"
+				},
 				children: [
 					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
 						className: "col col--4",

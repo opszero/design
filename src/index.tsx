@@ -14,7 +14,7 @@ export function copyrightFooter(): string {
             </div>
             < div className="footer-bottom" >
                 <div className="container" >
-                    <div className="row" style="align-items: center; text-align: center;" >
+                    <div className="row" style={{ alignItems: "center", textAlign: "center" }} >
                         <div className="col col--4" >
                             <img src="/img/uploads/2024/03/opsZero-Logo-Large.webp" alt="opsZero Logo" style="max-width: 200px; height: auto;" />
                         </div>
