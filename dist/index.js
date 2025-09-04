@@ -21,12 +21,13 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 }) : target, mod));
 
 //#endregion
+const react_dom_server = __toESM(require("react-dom/server"));
 const react_jsx_runtime = __toESM(require("react/jsx-runtime"));
 
 //#region src/index.tsx
 function copyrightFooter() {
 	const year = (/* @__PURE__ */ new Date()).getFullYear();
-	return /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+	return react_dom_server.default.renderToStaticMarkup(/* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
 		className: "footer-badges",
 		children: [
 			/* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
@@ -104,7 +105,7 @@ function copyrightFooter() {
 				]
 			})
 		})
-	})] });
+	})] }));
 }
 
 //#endregion

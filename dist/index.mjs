@@ -1,9 +1,10 @@
+import ReactDOMServer from "react-dom/server";
 import { Fragment, jsx, jsxs } from "react/jsx-runtime";
 
 //#region src/index.tsx
 function copyrightFooter() {
 	const year = (/* @__PURE__ */ new Date()).getFullYear();
-	return /* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsxs("div", {
+	return ReactDOMServer.renderToStaticMarkup(/* @__PURE__ */ jsxs(Fragment, { children: [/* @__PURE__ */ jsxs("div", {
 		className: "footer-badges",
 		children: [
 			/* @__PURE__ */ jsx("img", {
@@ -81,7 +82,7 @@ function copyrightFooter() {
 				]
 			})
 		})
-	})] });
+	})] }));
 }
 
 //#endregion
