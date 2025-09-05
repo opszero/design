@@ -1,4 +1,8 @@
 //#region src/index.d.ts
+declare const cloudAIItems: {
+  label: string;
+  href: string;
+}[];
 declare const footerLinks: {
   title: string;
   items: ({
@@ -13,4 +17,4 @@ declare const footerLinks: {
 }[];
 declare function copyrightFooter(): string;
 //#endregion
-export { copyrightFooter, footerLinks };
+export { cloudAIItems, copyrightFooter, footerLinks };

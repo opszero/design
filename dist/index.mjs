@@ -1,33 +1,34 @@
 //#region src/index.tsx
+const cloudAIItems = [
+	{
+		label: "Kubespot - Compliance and AI Ready Kubernetes",
+		href: "https://kubespot.com"
+	},
+	{
+		label: "DBAZero - Database Performance Tuning",
+		href: "https://dbazero.com"
+	},
+	{
+		label: "PolicyCop - SOC2/HIPAA/FedRamp Compliance Remediation",
+		href: "https://policycop.com"
+	},
+	{
+		label: "DiscountCloud.io - Up to 5% Off Cloud Bills",
+		href: "https://discountcloud.io/"
+	},
+	{
+		label: "OMYAC - Cloud Waste Finder",
+		href: "https://omyac.cloud"
+	},
+	{
+		label: "deepfacts.ai - Healthcare AI",
+		href: "https://deepfacts.ai/"
+	}
+];
 const footerLinks = [
 	{
 		title: "Cloud + AI",
-		items: [
-			{
-				label: "Kubespot - Compliance and AI Ready Kubernetes",
-				href: "https://kubespot.com"
-			},
-			{
-				label: "DBAZero - Database Performance Tuning",
-				href: "https://dbazero.com"
-			},
-			{
-				label: "PolicyCop - SOC2/HIPAA/FedRamp Compliance Remediation",
-				href: "https://policycop.com"
-			},
-			{
-				label: "DiscountCloud.io - Up to 5% Off Cloud Bills",
-				href: "https://discountcloud.io/"
-			},
-			{
-				label: "OMYAC - Cloud Waste Finder",
-				href: "https://omyac.cloud"
-			},
-			{
-				label: "deepfacts.ai - Healthcare AI",
-				href: "https://deepfacts.ai/"
-			}
-		]
+		items: cloudAIItems
 	},
 	{
 		title: "Marketplaces",
@@ -175,4 +176,4 @@ function copyrightFooter() {
 }
 
 //#endregion
-export { copyrightFooter, footerLinks };
+export { cloudAIItems, copyrightFooter, footerLinks };
