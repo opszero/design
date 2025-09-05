@@ -1,5 +1,84 @@
 
 //#region src/index.tsx
+const cloudItems = [
+	{
+		label: "Kubespot - Compliance and AI Ready Kubernetes",
+		href: "https://kubespot.com"
+	},
+	{
+		label: "DBAZero - Database Performance Tuning",
+		href: "https://dbazero.com"
+	},
+	{
+		label: "PolicyCop - SOC2/HIPAA/FedRamp Compliance Remediation",
+		href: "https://policycop.com"
+	},
+	{
+		label: "DiscountCloud.io - Up to 5% Off Cloud Bills",
+		href: "https://discountcloud.io/"
+	},
+	{
+		label: "OMYAC - Cloud Waste Finder",
+		href: "https://omyac.cloud"
+	},
+	{
+		label: "deepfacts.ai - Healthcare AI",
+		href: "https://deepfacts.ai/"
+	}
+];
+const footerLinks = [
+	{
+		title: "Cloud + AI",
+		items: cloudItems
+	},
+	{
+		title: "Marketplaces",
+		items: [{
+			label: "AWS Marketplace",
+			href: "https://aws.amazon.com/marketplace/seller-profile?id=1cfa0be5-3fcc-417a-83a8-eac1274450c3"
+		}, {
+			label: "Terraform Registry",
+			href: "https://registry.terraform.io/namespaces/opszero"
+		}]
+	},
+	{
+		title: "Resources",
+		items: [
+			{
+				label: "Docs",
+				to: "/docs"
+			},
+			{
+				label: "Blog",
+				to: "/blog"
+			},
+			{
+				label: "GitHub",
+				href: "https://github.com/opszero"
+			},
+			{
+				label: "Status",
+				href: "https://status.opszero.com/"
+			},
+			{
+				label: "Privacy Policy",
+				to: "/privacy"
+			},
+			{
+				label: "Terms of Service",
+				to: "/terms-of-service"
+			},
+			{
+				label: "Compliance",
+				to: "/compliance"
+			},
+			{
+				label: "Contact",
+				to: "/contact"
+			}
+		]
+	}
+];
 function copyrightFooter() {
 	const year = (/* @__PURE__ */ new Date()).getFullYear();
 	const style = `
@@ -99,3 +178,4 @@ function copyrightFooter() {
 
 //#endregion
 exports.copyrightFooter = copyrightFooter;
+exports.footerLinks = footerLinks;
