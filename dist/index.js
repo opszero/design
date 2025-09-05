@@ -2,8 +2,51 @@
 //#region src/index.tsx
 function copyrightFooter() {
 	const year = (/* @__PURE__ */ new Date()).getFullYear();
+	const style = `
+.footer--light {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.footer-badges {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-badges img {
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.footer-bottom {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links img {
+  height: 24px;
+}
+    `;
 	return `
-<style>{style}</style>
+<style>${style}</style>
 
 <div class="footer-badges">
                 <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />

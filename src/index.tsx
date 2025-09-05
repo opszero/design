@@ -48,7 +48,7 @@ export function copyrightFooter(): string {
 
 
     return `
-<style>{style}</style>
+<style>${style}</style>
 
 <div class="footer-badges">
                 <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
