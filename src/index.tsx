@@ -46,6 +46,5 @@ export function copyrightFooter(): string {
                         </div>
                     </div>
                 </div>
-            </div>
-        </>`
+            </div>`;
 }

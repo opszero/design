@@ -47,8 +47,7 @@ function copyrightFooter() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </>`;
+            </div>`;
 }
 
 //#endregion
