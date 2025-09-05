@@ -1,7 +1,10 @@
 //#region src/index.tsx
 function copyrightFooter() {
 	const year = (/* @__PURE__ */ new Date()).getFullYear();
-	return `<div class="footer-badges">
+	return `
+<style>{style}</style>
+
+<div class="footer-badges">
                 <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
                 <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
                 <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
