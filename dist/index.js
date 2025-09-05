@@ -1,35 +1,34 @@
 
 //#region src/index.tsx
-const cloudItems = [
-	{
-		label: "Kubespot - Compliance and AI Ready Kubernetes",
-		href: "https://kubespot.com"
-	},
-	{
-		label: "DBAZero - Database Performance Tuning",
-		href: "https://dbazero.com"
-	},
-	{
-		label: "PolicyCop - SOC2/HIPAA/FedRamp Compliance Remediation",
-		href: "https://policycop.com"
-	},
-	{
-		label: "DiscountCloud.io - Up to 5% Off Cloud Bills",
-		href: "https://discountcloud.io/"
-	},
-	{
-		label: "OMYAC - Cloud Waste Finder",
-		href: "https://omyac.cloud"
-	},
-	{
-		label: "deepfacts.ai - Healthcare AI",
-		href: "https://deepfacts.ai/"
-	}
-];
 const footerLinks = [
 	{
 		title: "Cloud + AI",
-		items: cloudItems
+		items: [
+			{
+				label: "Kubespot - Compliance and AI Ready Kubernetes",
+				href: "https://kubespot.com"
+			},
+			{
+				label: "DBAZero - Database Performance Tuning",
+				href: "https://dbazero.com"
+			},
+			{
+				label: "PolicyCop - SOC2/HIPAA/FedRamp Compliance Remediation",
+				href: "https://policycop.com"
+			},
+			{
+				label: "DiscountCloud.io - Up to 5% Off Cloud Bills",
+				href: "https://discountcloud.io/"
+			},
+			{
+				label: "OMYAC - Cloud Waste Finder",
+				href: "https://omyac.cloud"
+			},
+			{
+				label: "deepfacts.ai - Healthcare AI",
+				href: "https://deepfacts.ai/"
+			}
+		]
 	},
 	{
 		title: "Marketplaces",
