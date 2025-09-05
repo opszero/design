@@ -1,5 +1,8 @@
 
 import ReactDOMServer from 'react-dom/server';
+export { default as Footer } from "./Footer";
+
+
 
 export function copyrightFooter(): string {
     const year = new Date().getFullYear();
