@@ -1,0 +1,44 @@
+.footer {
+  background: var(--ifm-footer-background-color);
+  padding: 2rem 0;
+  color: var(--ifm-footer-color);
+}
+
+.logo {
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+h4 {
+  margin-bottom: 0.75rem;
+}
+
+.copyright {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0.7;
+}
