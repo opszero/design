@@ -1,11 +1,11 @@
 export function copyrightFooter(): string {
     const year = new Date().getFullYear();
     return `<div class="footer-badges">
-                <img src="https://opszero.com/img/uploads/2024/07/aws-advanced.png" alt="AWS Advanced Tier" />
-                <img src="https://opszero.com/img/uploads/2024/07/AWS-devops-competency.png" alt="AWS DevOps Competency" />
-                <img src="https://opszero.com/img/uploads/2024/07/AWS-eks.png" alt="AWS EKS Delivery" />
-                <img src="https://opszero.com/img/uploads/2024/07/AWS-public-sector.png" alt="AWS Public Sector" />
-                <img src="https://opszero.com/img/uploads/2024/03/15.webp" alt="Cyber AB CMMC" />
+                <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
+                <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
+                <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
+                <img src="https://opszero.com/img/common/aws-public-sector.png" alt="AWS Public Sector" />
+                <img src="https://opszero.com/img/common/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
             </div>
             <div class="footer-bottom">
                 <div class="container">
@@ -25,7 +25,7 @@ export function copyrightFooter(): string {
                                     title="LinkedIn"
                                 >
                                     <img
-                                        src="https://opszero.com/img/uploads/LinkedIn.svg"
+                                        src="https://opszero.com/img/common/linkedin.svg"
                                         alt="LinkedIn"
                                         style="height: 28px;"
                                     />
@@ -37,7 +37,7 @@ export function copyrightFooter(): string {
                                     title="GitHub"
                                 >
                                     <img
-                                        src="https://opszero.com/img/uploads/GitHub.svg"
+                                        src="https://opszero.com/img/common/github.svg"
                                         alt="GitHub"
                                         style="height: 28px;"
                                     />
