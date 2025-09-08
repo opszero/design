@@ -33,13 +33,20 @@ const footerLinks = [
 	},
 	{
 		title: "Marketplaces",
-		items: [{
-			label: "AWS Marketplace",
-			href: "https://aws.amazon.com/marketplace/seller-profile?id=1cfa0be5-3fcc-417a-83a8-eac1274450c3"
-		}, {
-			label: "Terraform Registry",
-			href: "https://registry.terraform.io/namespaces/opszero"
-		}]
+		items: [
+			{
+				label: "AWS Marketplace",
+				href: "https://aws.amazon.com/marketplace/seller-profile?id=1cfa0be5-3fcc-417a-83a8-eac1274450c3"
+			},
+			{
+				label: "Terraform Registry",
+				href: "https://registry.terraform.io/namespaces/opszero"
+			},
+			{
+				label: "AI Platform Alliance",
+				href: "https://platformalliance.ai/company/opszero/"
+			}
+		]
 	},
 	{
 		title: "Resources",
