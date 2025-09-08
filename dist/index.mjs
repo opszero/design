@@ -135,15 +135,21 @@ function copyrightFooter() {
             </div>
             <div class="footer-bottom">
                 <div class="container">
-                    <div class="row" style="align-items: center; text-align: center;">
+                   <div className="row" style={{ alignItems: 'center', textAlign: 'center' }}>
+
                         <div class="col col--4">
-                            <img src="https://opszero.com/img/common/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
-                        </div>
+                          <img
+  src="https://opszero.com/img/common/opsZero-Logo-Large.webp"
+  alt="opsZero"
+  style={{ maxWidth: '200px', height: 'auto' }}
+/>
+  </div>
                         <div class="col col--4">
                             <p>©2016–${year} opsZero, LLC </p>
                         </div>
                         <div class="col col--4">
-                            <div style="display: flex; justify-content: center; gap: 1rem;">
+                          <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
+
                                 <a
                                     href="https://www.linkedin.com/company/opszero/"
                                     target="_blank"
@@ -151,10 +157,11 @@ function copyrightFooter() {
                                     title="LinkedIn"
                                 >
                                     <img
-                                        src="https://opszero.com/img/common/linkedin.svg"
-                                        alt="LinkedIn"
-                                        style="height: 28px;"
-                                    />
+  src="https://opszero.com/img/common/linkedin.svg"
+  alt="LinkedIn"
+  style={{ height: '28px' }}
+/>
+
                                 </a>
                                 <a
                                     href="https://github.com/opszero"
@@ -162,11 +169,12 @@ function copyrightFooter() {
                                     rel="noopener"
                                     title="GitHub"
                                 >
-                                    <img
-                                        src="https://opszero.com/img/common/github.svg"
-                                        alt="GitHub"
-                                        style="height: 28px;"
-                                    />
+                                   <img
+  src="https://opszero.com/img/common/github.svg"
+  alt="GitHub"
+  style={{ height: '28px' }}
+/>
+
                                 </a>
                             </div>
                         </div>

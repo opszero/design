@@ -128,11 +128,11 @@ function copyrightFooter() {
 <style>${style}</style>
 
 <div class="footer-badges">
-                <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
-                <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
-                <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
-                <img src="https://opszero.com/img/common/aws-public-sector.png" alt="AWS Public Sector" />
-                <img src="https://opszero.com/img/common/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+                <img src="img/aws-advanced.png" alt="AWS Advanced Tier" />
+                <img src="img/aws-devops-competency.png" alt="AWS DevOps Competency" />
+                <img src="img/aws-eks.png" alt="AWS EKS Delivery" />
+                <img src="img/aws-public-sector.png" alt="AWS Public Sector" />
+                <img src="img/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
             </div>
             <div class="footer-bottom">
                 <div class="container">
