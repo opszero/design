@@ -1,3 +1,5 @@
+export {ContactPage } from "./ContactPage";
+
 export const cloudAIItems = [
     { label: 'Kubespot - Compliance and AI Ready Kubernetes', href: 'https://kubespot.com' },
     { label: 'DBAZero - Database Performance Tuning', href: 'https://dbazero.com' },

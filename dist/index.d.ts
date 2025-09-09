@@ -1,3 +1,6 @@
+//#region src/ContactPage.d.ts
+declare function ContactPage(): any;
+//#endregion
 //#region src/index.d.ts
 declare const cloudAIItems: {
   label: string;
@@ -17,4 +20,4 @@ declare const footerLinks: {
 }[];
 declare function copyrightFooter(): string;
 //#endregion
-export { cloudAIItems, copyrightFooter, footerLinks };
+export { ContactPage, cloudAIItems, copyrightFooter, footerLinks };

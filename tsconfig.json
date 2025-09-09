@@ -3,8 +3,10 @@
     "target": "ES2020",
     "module": "ESNext",
     "declaration": true,
+      "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "moduleResolution": "node",
     "outDir": "dist",
-    "jsx": "react-jsx", // Or "react", "preserve", etc.
     "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true
