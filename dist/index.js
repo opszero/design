@@ -21,8 +21,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 }) : target, mod));
 
 //#endregion
-let react_jsx_runtime = require("react/jsx-runtime");
-react_jsx_runtime = __toESM(react_jsx_runtime);
+const react_jsx_runtime = __toESM(require("react/jsx-runtime"));
 
 //#region src/ContactPage.tsx
 function ContactPage() {
@@ -68,7 +67,7 @@ function ContactPage() {
 				className: "col col--6",
 				style: { textAlign: "center" },
 				children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
-					src: "https://i0.wp.com/opszero.com/wp-content/uploads/2024/03/OpsZero-Contact.webp?resize=1080%2C592&ssl=1",
+					src: "/img/OpsZero-Contact.png",
 					alt: "Contact",
 					style: {
 						maxWidth: "100%",
@@ -211,8 +210,8 @@ const footerLinks = [
 	}
 ];
 function copyrightFooter() {
-	return `
-<style>
+	const year = (/* @__PURE__ */ new Date()).getFullYear();
+	const style = `
 .footer--light {
   background-color: #fff !important;
   color: #000 !important;
@@ -254,23 +253,25 @@ function copyrightFooter() {
 .social-links img {
   height: 24px;
 }
-    </style>
+    `;
+	return `
+<style>${style}</style>
 
 <div class="footer-badges">
-                <img src="img/aws-advanced.png" alt="AWS Advanced Tier" />
-                <img src="img/aws-devops-competency.png" alt="AWS DevOps Competency" />
-                <img src="img/aws-eks.png" alt="AWS EKS Delivery" />
-                <img src="img/aws-public-sector.png" alt="AWS Public Sector" />
-                <img src="img/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+                <img src="https://opszero.com/img/aws-advanced.png" alt="AWS Advanced Tier" />
+                <img src="https://opszero.com/img/aws-devops-competency.png" alt="AWS DevOps Competency" />
+                <img src="https://opszero.com/img/aws-eks.png" alt="AWS EKS Delivery" />
+                <img src="https://opszero.com/img/aws-public-sector.png" alt="AWS Public Sector" />
+                <img src="https://opszero.com/img/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
             </div>
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row" style="align-items: center; text-align: center;">
                         <div class="col col--4">
-                            <img src="img/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
+                            <img src="https://opszero.com/img/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
                         </div>
                         <div class="col col--4">
-                            <p>©2016–${(/* @__PURE__ */ new Date()).getFullYear()} opsZero, LLC </p>
+                            <p>©2016–${year} opsZero, LLC </p>
                         </div>
                         <div class="col col--4">
                             <div style="display: flex; justify-content: center; gap: 1rem;">
@@ -281,7 +282,7 @@ function copyrightFooter() {
                                     title="LinkedIn"
                                 >
                                     <img
-                                        src="img/LinkedIn.svg"
+                                        src="https://opszero.com/img/LinkedIn.svg"
                                         alt="LinkedIn"
                                         style="height: 28px;"
                                     />
@@ -293,7 +294,7 @@ function copyrightFooter() {
                                     title="GitHub"
                                 >
                                     <img
-                                        src="img/GitHub.svg"
+                                        src="https://opszero.com/img/GitHub.svg"
                                         alt="GitHub"
                                         style="height: 28px;"
                                     />

@@ -1,4 +1,4 @@
-export {ContactPage } from "./ContactPage";
+export { ContactPage } from "./ContactPage";
 
 export const cloudAIItems = [
     { label: 'Kubespot - Compliance and AI Ready Kubernetes', href: 'https://kubespot.com' },
@@ -97,17 +97,17 @@ export function copyrightFooter(): string {
 <style>${style}</style>
 
 <div class="footer-badges">
-                <img src="img/aws-advanced.png" alt="AWS Advanced Tier" />
-                <img src="img/aws-devops-competency.png" alt="AWS DevOps Competency" />
-                <img src="img/aws-eks.png" alt="AWS EKS Delivery" />
-                <img src="img/aws-public-sector.png" alt="AWS Public Sector" />
-                <img src="img/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+                <img src="https://opszero.com/img/aws-advanced.png" alt="AWS Advanced Tier" />
+                <img src="https://opszero.com/img/aws-devops-competency.png" alt="AWS DevOps Competency" />
+                <img src="https://opszero.com/img/aws-eks.png" alt="AWS EKS Delivery" />
+                <img src="https://opszero.com/img/aws-public-sector.png" alt="AWS Public Sector" />
+                <img src="https://opszero.com/img/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
             </div>
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row" style="align-items: center; text-align: center;">
                         <div class="col col--4">
-                            <img src="img/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
+                            <img src="https://opszero.com/img/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
                         </div>
                         <div class="col col--4">
                             <p>©2016–${year} opsZero, LLC </p>
@@ -121,7 +121,7 @@ export function copyrightFooter(): string {
                                     title="LinkedIn"
                                 >
                                     <img
-                                        src="img/LinkedIn.svg"
+                                        src="https://opszero.com/img/LinkedIn.svg"
                                         alt="LinkedIn"
                                         style="height: 28px;"
                                     />
@@ -133,7 +133,7 @@ export function copyrightFooter(): string {
                                     title="GitHub"
                                 >
                                     <img
-                                        src="img/GitHub.svg"
+                                        src="https://opszero.com/img/GitHub.svg"
                                         alt="GitHub"
                                         style="height: 28px;"
                                     />
