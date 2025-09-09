@@ -28,7 +28,7 @@ export function ContactPage() {
           {/* Right Column - Image */}
           <div className="col col--6" style={{ textAlign: "center" }}>
             <img
-              src="https://opszero.com/img/OpsZero-Contact.png"
+              src="https://opszero.com/img/common/opszero-contact.png"
               alt="Contact"
               style={{ maxWidth: "100%", height: "auto" }}
             />
