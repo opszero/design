@@ -44,7 +44,7 @@ function ContactPage() {
 				className: "col col--6",
 				style: { textAlign: "center" },
 				children: /* @__PURE__ */ jsx("img", {
-					src: "/img/OpsZero-Contact.png",
+					src: "https://opszero.com/img/OpsZero-Contact.png",
 					alt: "Contact",
 					style: {
 						maxWidth: "100%",
