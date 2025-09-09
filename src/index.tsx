@@ -122,7 +122,7 @@ export function copyrightFooter(): string {
                                     title="LinkedIn"
                                 >
                                     <img
-                                        src="https://opszero.com/img/common/LinkedIn.svg"
+                                        src="https://opszero.com/img/common/linkedin.svg"
                                         alt="LinkedIn"
                                         style="height: 28px;"
                                     />
@@ -134,7 +134,7 @@ export function copyrightFooter(): string {
                                     title="GitHub"
                                 >
                                     <img
-                                        src="https://opszero.com/img/common/GitHub.svg"
+                                        src="https://opszero.com/img/common/github.svg"
                                         alt="GitHub"
                                         style="height: 28px;"
                                     />
