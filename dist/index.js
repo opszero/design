@@ -1,4 +1,135 @@
+//#region rolldown:runtime
+var __create = Object.create;
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __copyProps = (to, from, except, desc) => {
+	if (from && typeof from === "object" || typeof from === "function") for (var keys = __getOwnPropNames(from), i = 0, n = keys.length, key; i < n; i++) {
+		key = keys[i];
+		if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, {
+			get: ((k) => from[k]).bind(null, key),
+			enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+		});
+	}
+	return to;
+};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", {
+	value: mod,
+	enumerable: true
+}) : target, mod));
 
+//#endregion
+let react_jsx_runtime = require("react/jsx-runtime");
+react_jsx_runtime = __toESM(react_jsx_runtime);
+
+//#region src/ContactPage.tsx
+function ContactPage() {
+	return /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("main", { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("section", {
+		className: "container padding-vert--xl",
+		children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+			className: "row",
+			children: [/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+				className: "col col--6",
+				children: [
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("h1", {
+						style: {
+							fontSize: 50,
+							lineHeight: 1.5
+						},
+						children: "How can we help?"
+					}),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("p", {
+						style: {
+							fontSize: 20,
+							lineHeight: 1.5,
+							marginBottom: 30
+						},
+						children: [
+							"We are committed to building long-lasting  ",
+							/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
+							"partnerships that  drive innovation and look forward  ",
+							/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
+							"to learning more about the vision of your",
+							/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
+							"organization."
+						]
+					}),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("a", {
+						className: "button button--primary",
+						href: "https://calendly.com/opszero-llc/discovery",
+						target: "_blank",
+						rel: "noopener noreferrer",
+						children: "Schedule a call"
+					})
+				]
+			}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+				className: "col col--6",
+				style: { textAlign: "center" },
+				children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
+					src: "https://i0.wp.com/opszero.com/wp-content/uploads/2024/03/OpsZero-Contact.webp?resize=1080%2C592&ssl=1",
+					alt: "Contact",
+					style: {
+						maxWidth: "100%",
+						height: "auto"
+					}
+				})
+			})]
+		})
+	}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("section", {
+		className: "container padding-vert--xl",
+		children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+			className: "row",
+			children: [/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+				className: "col col--9",
+				children: [
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("h3", { children: "Book a time with us:" }),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+						className: "calendly-inline-widget",
+						"data-url": "https://calendly.com/opszero-llc/discovery",
+						style: {
+							minWidth: "320px",
+							height: "700px"
+						}
+					}),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("script", {
+						type: "text/javascript",
+						src: "https://assets.calendly.com/assets/external/widget.js",
+						async: true
+					})
+				]
+			}), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+				className: "col col--3",
+				children: [
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("h3", {
+						style: { color: "#1d4ed8" },
+						children: "Contact"
+					}),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("p", { children: [
+						/* @__PURE__ */ (0, react_jsx_runtime.jsx)("a", {
+							href: "tel:+15102882791",
+							children: "(510) 288-2791"
+						}),
+						/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
+						"hi (at) opszero (dot) com"
+					] }),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("h3", {
+						style: { color: "#1d4ed8" },
+						children: "Our Office"
+					}),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("p", { children: [
+						"422 Benton St",
+						/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
+						"Santa Rosa, CA 95401"
+					] })
+				]
+			})]
+		})
+	})] });
+}
+
+//#endregion
 //#region src/index.tsx
 const cloudAIItems = [
 	{
@@ -87,8 +218,8 @@ const footerLinks = [
 	}
 ];
 function copyrightFooter() {
-	const year = (/* @__PURE__ */ new Date()).getFullYear();
-	const style = `
+	return `
+<style>
 .footer--light {
   background-color: #fff !important;
   color: #000 !important;
@@ -130,25 +261,23 @@ function copyrightFooter() {
 .social-links img {
   height: 24px;
 }
-    `;
-	return `
-<style>${style}</style>
+    </style>
 
 <div class="footer-badges">
-                <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
-                <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
-                <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
-                <img src="https://opszero.com/img/common/aws-public-sector.png" alt="AWS Public Sector" />
-                <img src="https://opszero.com/img/common/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+                <img src="img/aws-advanced.png" alt="AWS Advanced Tier" />
+                <img src="img/aws-devops-competency.png" alt="AWS DevOps Competency" />
+                <img src="img/aws-eks.png" alt="AWS EKS Delivery" />
+                <img src="img/aws-public-sector.png" alt="AWS Public Sector" />
+                <img src="img/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
             </div>
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row" style="align-items: center; text-align: center;">
                         <div class="col col--4">
-                            <img src="https://opszero.com/img/common/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
+                            <img src="img/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
                         </div>
                         <div class="col col--4">
-                            <p>©2016–${year} opsZero, LLC </p>
+                            <p>©2016–${(/* @__PURE__ */ new Date()).getFullYear()} opsZero, LLC </p>
                         </div>
                         <div class="col col--4">
                             <div style="display: flex; justify-content: center; gap: 1rem;">
@@ -159,7 +288,7 @@ function copyrightFooter() {
                                     title="LinkedIn"
                                 >
                                     <img
-                                        src="https://opszero.com/img/common/linkedin.svg"
+                                        src="img/LinkedIn.svg"
                                         alt="LinkedIn"
                                         style="height: 28px;"
                                     />
@@ -171,7 +300,7 @@ function copyrightFooter() {
                                     title="GitHub"
                                 >
                                     <img
-                                        src="https://opszero.com/img/common/github.svg"
+                                        src="img/GitHub.svg"
                                         alt="GitHub"
                                         style="height: 28px;"
                                     />
@@ -184,6 +313,7 @@ function copyrightFooter() {
 }
 
 //#endregion
+exports.ContactPage = ContactPage;
 exports.cloudAIItems = cloudAIItems;
 exports.copyrightFooter = copyrightFooter;
 exports.footerLinks = footerLinks;
