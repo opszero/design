@@ -41,11 +41,10 @@ export function ContactPage() {
         <div className="row">
           {/* Calendly Embed Column */}
           <div className="col col--9">
-            <h3>Book a time with us:</h3>
             <div
               className="calendly-inline-widget"
               data-url="https://calendly.com/opszero-llc/discovery"
-              style={{ minWidth: "320px", height: "700px" }}
+              style={{ minWidth: "320px", height: "1200px" }}
             ></div>
             <script
               type="text/javascript"

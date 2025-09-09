@@ -59,22 +59,18 @@ function ContactPage() {
 			className: "row",
 			children: [/* @__PURE__ */ jsxs("div", {
 				className: "col col--9",
-				children: [
-					/* @__PURE__ */ jsx("h3", { children: "Book a time with us:" }),
-					/* @__PURE__ */ jsx("div", {
-						className: "calendly-inline-widget",
-						"data-url": "https://calendly.com/opszero-llc/discovery",
-						style: {
-							minWidth: "320px",
-							height: "700px"
-						}
-					}),
-					/* @__PURE__ */ jsx("script", {
-						type: "text/javascript",
-						src: "https://assets.calendly.com/assets/external/widget.js",
-						async: true
-					})
-				]
+				children: [/* @__PURE__ */ jsx("div", {
+					className: "calendly-inline-widget",
+					"data-url": "https://calendly.com/opszero-llc/discovery",
+					style: {
+						minWidth: "320px",
+						height: "1200px"
+					}
+				}), /* @__PURE__ */ jsx("script", {
+					type: "text/javascript",
+					src: "https://assets.calendly.com/assets/external/widget.js",
+					async: true
+				})]
 			}), /* @__PURE__ */ jsxs("div", {
 				className: "col col--3",
 				children: [
@@ -242,17 +238,17 @@ function copyrightFooter() {
 <style>${style}</style>
 
 <div class="footer-badges">
-                <img src="https://opszero.com/img/aws-advanced.png" alt="AWS Advanced Tier" />
-                <img src="https://opszero.com/img/aws-devops-competency.png" alt="AWS DevOps Competency" />
-                <img src="https://opszero.com/img/aws-eks.png" alt="AWS EKS Delivery" />
-                <img src="https://opszero.com/img/aws-public-sector.png" alt="AWS Public Sector" />
-                <img src="https://opszero.com/img/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+                <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
+                <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
+                <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
+                <img src="https://opszero.com/img/common/aws-public-sector.png" alt="AWS Public Sector" />
+                <img src="https://opszero.com/img/common/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
             </div>
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row" style="align-items: center; text-align: center;">
                         <div class="col col--4">
-                            <img src="https://opszero.com/img/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
+                            <img src="https://opszero.com/img/common/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
                         </div>
                         <div class="col col--4">
                             <p>©2016–${year} opsZero, LLC </p>
@@ -266,7 +262,7 @@ function copyrightFooter() {
                                     title="LinkedIn"
                                 >
                                     <img
-                                        src="https://opszero.com/img/LinkedIn.svg"
+                                        src="https://opszero.com/img/common/LinkedIn.svg"
                                         alt="LinkedIn"
                                         style="height: 28px;"
                                     />
@@ -278,7 +274,7 @@ function copyrightFooter() {
                                     title="GitHub"
                                 >
                                     <img
-                                        src="https://opszero.com/img/GitHub.svg"
+                                        src="https://opszero.com/img/common/GitHub.svg"
                                         alt="GitHub"
                                         style="height: 28px;"
                                     />
