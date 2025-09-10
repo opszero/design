@@ -11,7 +11,7 @@ export const cloudAIItems = [
 
 export const footerLinks = [
     {
-        title: 'Cloud + AI',
+        title: 'Your Cloud + AI Team',
         items: cloudAIItems,
     },
     {
