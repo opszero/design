@@ -108,7 +108,7 @@ export function copyrightFooter(): string {
                 <div class="container">
                     <div class="row" style="align-items: center; text-align: center;">
                         <div class="col col--4">
-                            <img src="https://opszero.com/img/common/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
+                            <a href="https://opszero.com"><img src="https://opszero.com/img/common/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" /></a>
                         </div>
                         <div class="col col--4">
                             <p>©2016–${year} opsZero, LLC </p>
