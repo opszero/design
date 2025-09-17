@@ -21,8 +21,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 }) : target, mod));
 
 //#endregion
-let react_jsx_runtime = require("react/jsx-runtime");
-react_jsx_runtime = __toESM(react_jsx_runtime);
+const react_jsx_runtime = __toESM(require("react/jsx-runtime"));
 
 //#region src/ContactPage.tsx
 function ContactPage() {
@@ -68,7 +67,7 @@ function ContactPage() {
 				className: "col col--6",
 				style: { textAlign: "center" },
 				children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
-					src: "/img/OpsZero-Contact.png",
+					src: "https://opszero.com/img/common/opszero-contact.png",
 					alt: "Contact",
 					style: {
 						maxWidth: "100%",
@@ -83,22 +82,18 @@ function ContactPage() {
 			className: "row",
 			children: [/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
 				className: "col col--9",
-				children: [
-					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("h3", { children: "Book a time with us:" }),
-					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
-						className: "calendly-inline-widget",
-						"data-url": "https://calendly.com/opszero-llc/discovery",
-						style: {
-							minWidth: "320px",
-							height: "700px"
-						}
-					}),
-					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("script", {
-						type: "text/javascript",
-						src: "https://assets.calendly.com/assets/external/widget.js",
-						async: true
-					})
-				]
+				children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+					className: "calendly-inline-widget",
+					"data-url": "https://calendly.com/opszero-llc/discovery",
+					style: {
+						minWidth: "320px",
+						height: "1200px"
+					}
+				}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("script", {
+					type: "text/javascript",
+					src: "https://assets.calendly.com/assets/external/widget.js",
+					async: true
+				})]
 			}), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
 				className: "col col--3",
 				children: [
@@ -411,18 +406,25 @@ const cloudAIItems = [
 ];
 const footerLinks = [
 	{
-		title: "Cloud + AI",
+		title: "Your Cloud + AI Team",
 		items: cloudAIItems
 	},
 	{
 		title: "Marketplaces",
-		items: [{
-			label: "AWS Marketplace",
-			href: "https://aws.amazon.com/marketplace/seller-profile?id=1cfa0be5-3fcc-417a-83a8-eac1274450c3"
-		}, {
-			label: "Terraform Registry",
-			href: "https://registry.terraform.io/namespaces/opszero"
-		}]
+		items: [
+			{
+				label: "AWS Marketplace",
+				href: "https://aws.amazon.com/marketplace/seller-profile?id=1cfa0be5-3fcc-417a-83a8-eac1274450c3"
+			},
+			{
+				label: "Terraform Registry",
+				href: "https://registry.terraform.io/namespaces/opszero"
+			},
+			{
+				label: "AI Platform Alliance",
+				href: "https://platformalliance.ai/company/opszero/"
+			}
+		]
 	},
 	{
 		title: "Resources",
@@ -463,8 +465,8 @@ const footerLinks = [
 	}
 ];
 function copyrightFooter() {
-	return `
-<style>
+	const year = (/* @__PURE__ */ new Date()).getFullYear();
+	const style = `
 .footer--light {
   background-color: #fff !important;
   color: #000 !important;
@@ -506,23 +508,25 @@ function copyrightFooter() {
 .social-links img {
   height: 24px;
 }
-    </style>
+    `;
+	return `
+<style>${style}</style>
 
 <div class="footer-badges">
-                <img src="img/aws-advanced.png" alt="AWS Advanced Tier" />
-                <img src="img/aws-devops-competency.png" alt="AWS DevOps Competency" />
-                <img src="img/aws-eks.png" alt="AWS EKS Delivery" />
-                <img src="img/aws-public-sector.png" alt="AWS Public Sector" />
-                <img src="img/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+                <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
+                <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
+                <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
+                <img src="https://opszero.com/img/common/aws-public-sector.png" alt="AWS Public Sector" />
+                <img src="https://opszero.com/img/common/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
             </div>
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row" style="align-items: center; text-align: center;">
                         <div class="col col--4">
-                            <img src="img/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
+                            <a href="https://opszero.com"><img src="https://opszero.com/img/common/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" /></a>
                         </div>
                         <div class="col col--4">
-                            <p>©2016–${(/* @__PURE__ */ new Date()).getFullYear()} opsZero, LLC </p>
+                            <p>©2016–${year} opsZero, LLC </p>
                         </div>
                         <div class="col col--4">
                             <div style="display: flex; justify-content: center; gap: 1rem;">
@@ -533,7 +537,7 @@ function copyrightFooter() {
                                     title="LinkedIn"
                                 >
                                     <img
-                                        src="img/LinkedIn.svg"
+                                        src="https://opszero.com/img/common/linkedin.svg"
                                         alt="LinkedIn"
                                         style="height: 28px;"
                                     />
@@ -545,7 +549,7 @@ function copyrightFooter() {
                                     title="GitHub"
                                 >
                                     <img
-                                        src="img/GitHub.svg"
+                                        src="https://opszero.com/img/common/github.svg"
                                         alt="GitHub"
                                         style="height: 28px;"
                                     />

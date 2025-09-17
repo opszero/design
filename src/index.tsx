@@ -1,4 +1,4 @@
-export {ContactPage } from "./ContactPage";
+export { ContactPage } from "./ContactPage";
 export { Privacy } from "./Privacy";
 export { TermsOfService } from "./TermsOfService";
 export { Compliance } from "./Compliance";
@@ -13,7 +13,7 @@ export const cloudAIItems = [
 
 export const footerLinks = [
     {
-        title: 'Cloud + AI',
+        title: 'Your Cloud + AI Team',
         items: cloudAIItems,
     },
     {
@@ -21,6 +21,7 @@ export const footerLinks = [
         items: [
             { label: 'AWS Marketplace', href: 'https://aws.amazon.com/marketplace/seller-profile?id=1cfa0be5-3fcc-417a-83a8-eac1274450c3' },
             { label: 'Terraform Registry', href: 'https://registry.terraform.io/namespaces/opszero' },
+            { label: 'AI Platform Alliance', href: 'https://platformalliance.ai/company/opszero/' },
         ]
     },
     {
@@ -99,17 +100,17 @@ export function copyrightFooter(): string {
 <style>${style}</style>
 
 <div class="footer-badges">
-                <img src="img/aws-advanced.png" alt="AWS Advanced Tier" />
-                <img src="img/aws-devops-competency.png" alt="AWS DevOps Competency" />
-                <img src="img/aws-eks.png" alt="AWS EKS Delivery" />
-                <img src="img/aws-public-sector.png" alt="AWS Public Sector" />
-                <img src="img/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+                <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
+                <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
+                <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
+                <img src="https://opszero.com/img/common/aws-public-sector.png" alt="AWS Public Sector" />
+                <img src="https://opszero.com/img/common/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
             </div>
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row" style="align-items: center; text-align: center;">
                         <div class="col col--4">
-                            <img src="img/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
+                            <a href="https://opszero.com"><img src="https://opszero.com/img/common/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" /></a>
                         </div>
                         <div class="col col--4">
                             <p>©2016–${year} opsZero, LLC </p>
@@ -123,7 +124,7 @@ export function copyrightFooter(): string {
                                     title="LinkedIn"
                                 >
                                     <img
-                                        src="img/LinkedIn.svg"
+                                        src="https://opszero.com/img/common/linkedin.svg"
                                         alt="LinkedIn"
                                         style="height: 28px;"
                                     />
@@ -135,7 +136,7 @@ export function copyrightFooter(): string {
                                     title="GitHub"
                                 >
                                     <img
-                                        src="img/GitHub.svg"
+                                        src="https://opszero.com/img/common/github.svg"
                                         alt="GitHub"
                                         style="height: 28px;"
                                     />

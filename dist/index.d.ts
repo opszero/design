@@ -1,16 +1,14 @@
-import * as react_jsx_runtime2 from "react/jsx-runtime";
-
 //#region src/ContactPage.d.ts
-declare function ContactPage(): react_jsx_runtime2.JSX.Element;
+declare function ContactPage(): any;
 //#endregion
 //#region src/Privacy.d.ts
-declare function Privacy(): react_jsx_runtime2.JSX.Element;
+declare function Privacy(): any;
 //#endregion
 //#region src/TermsOfService.d.ts
-declare function TermsOfService(): react_jsx_runtime2.JSX.Element;
+declare function TermsOfService(): any;
 //#endregion
 //#region src/Compliance.d.ts
-declare function Compliance(): react_jsx_runtime2.JSX.Element;
+declare function Compliance(): any;
 //#endregion
 //#region src/index.d.ts
 declare const cloudAIItems: {
