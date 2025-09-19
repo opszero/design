@@ -3,12 +3,12 @@ export { Privacy } from "./Privacy";
 export { TermsOfService } from "./TermsOfService";
 export { Compliance } from "./Compliance";
 export const cloudAIItems = [
-    { label: 'Kubespot - Compliance and AI Ready Kubernetes', href: 'https://kubespot.com' },
-    { label: 'DBAZero - Database Performance Tuning', href: 'https://dbazero.com' },
-    { label: 'PolicyCop - SOC2/HIPAA/FedRamp Compliance Remediation', href: 'https://policycop.com' },
+    { label: 'Kubespot - Your Kubernetes Team', href: 'https://kubespot.com' },
+    { label: 'DBAZero - Your Database Team', href: 'https://dbazero.com' },
+    { label: 'PolicyCop - Your Compliance Team', href: 'https://policycop.com' },
+    { label: 'deepfacts.ai - Your AI Team', href: 'https://deepfacts.ai/' },
     { label: 'DiscountCloud.io - Up to 5% Off Cloud Bills', href: 'https://discountcloud.io/' },
     { label: 'OMYAC - Cloud Waste Finder', href: 'https://omyac.cloud' },
-    { label: 'deepfacts.ai - Healthcare AI', href: 'https://deepfacts.ai/' },
 ]
 
 export const footerLinks = [

@@ -380,16 +380,20 @@ function Compliance() {
 //#region src/index.tsx
 const cloudAIItems = [
 	{
-		label: "Kubespot - Compliance and AI Ready Kubernetes",
+		label: "Kubespot - Your Kubernetes Team",
 		href: "https://kubespot.com"
 	},
 	{
-		label: "DBAZero - Database Performance Tuning",
+		label: "DBAZero - Your Database Team",
 		href: "https://dbazero.com"
 	},
 	{
-		label: "PolicyCop - SOC2/HIPAA/FedRamp Compliance Remediation",
+		label: "PolicyCop - Your Compliance Team",
 		href: "https://policycop.com"
+	},
+	{
+		label: "deepfacts.ai - Your AI Team",
+		href: "https://deepfacts.ai/"
 	},
 	{
 		label: "DiscountCloud.io - Up to 5% Off Cloud Bills",
@@ -398,10 +402,6 @@ const cloudAIItems = [
 	{
 		label: "OMYAC - Cloud Waste Finder",
 		href: "https://omyac.cloud"
-	},
-	{
-		label: "deepfacts.ai - Healthcare AI",
-		href: "https://deepfacts.ai/"
 	}
 ];
 const footerLinks = [
