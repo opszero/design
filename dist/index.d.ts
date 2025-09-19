@@ -1,16 +1,25 @@
-import * as react_jsx_runtime2 from "react/jsx-runtime";
+import * as react_jsx_runtime0 from "react/jsx-runtime";
+import { ReactNode } from "react";
 
 //#region src/ContactPage.d.ts
-declare function ContactPage(): react_jsx_runtime2.JSX.Element;
+declare function ContactPage(): react_jsx_runtime0.JSX.Element;
 //#endregion
 //#region src/Privacy.d.ts
-declare function Privacy(): react_jsx_runtime2.JSX.Element;
+declare function Privacy(): react_jsx_runtime0.JSX.Element;
 //#endregion
 //#region src/TermsOfService.d.ts
-declare function TermsOfService(): react_jsx_runtime2.JSX.Element;
+declare function TermsOfService(): react_jsx_runtime0.JSX.Element;
 //#endregion
 //#region src/Compliance.d.ts
-declare function Compliance(): react_jsx_runtime2.JSX.Element;
+declare function Compliance(): react_jsx_runtime0.JSX.Element;
+//#endregion
+//#region src/about.d.ts
+type Props = {
+  headContent?: ReactNode;
+};
+declare function About({
+  headContent
+}: Props): react_jsx_runtime0.JSX.Element;
 //#endregion
 //#region src/index.d.ts
 declare const cloudAIItems: {
@@ -31,4 +40,4 @@ declare const footerLinks: {
 }[];
 declare function copyrightFooter(): string;
 //#endregion
-export { Compliance, ContactPage, Privacy, TermsOfService, cloudAIItems, copyrightFooter, footerLinks };
+export { About, Compliance, ContactPage, Privacy, TermsOfService, cloudAIItems, copyrightFooter, footerLinks };
