@@ -2,6 +2,7 @@ export { ContactPage } from "./ContactPage";
 export { Privacy } from "./Privacy";
 export { TermsOfService } from "./TermsOfService";
 export { Compliance } from "./Compliance";
+export { About } from "./about";
 export const cloudAIItems = [
     { label: 'Kubespot - Your Kubernetes Team', href: 'https://kubespot.com' },
     { label: 'DBAZero - Your Database Team', href: 'https://dbazero.com' },

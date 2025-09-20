@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 //#region src/ContactPage.d.ts
 declare function ContactPage(): any;
 //#endregion
@@ -9,6 +11,14 @@ declare function TermsOfService(): any;
 //#endregion
 //#region src/Compliance.d.ts
 declare function Compliance(): any;
+//#endregion
+//#region src/about.d.ts
+type Props = {
+  headContent?: ReactNode;
+};
+declare function About({
+  headContent
+}: Props): any;
 //#endregion
 //#region src/index.d.ts
 declare const cloudAIItems: {
@@ -29,4 +39,4 @@ declare const footerLinks: {
 }[];
 declare function copyrightFooter(): string;
 //#endregion
-export { Compliance, ContactPage, Privacy, TermsOfService, cloudAIItems, copyrightFooter, footerLinks };
+export { About, Compliance, ContactPage, Privacy, TermsOfService, cloudAIItems, copyrightFooter, footerLinks };

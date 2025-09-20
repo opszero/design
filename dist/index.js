@@ -22,6 +22,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 
 //#endregion
 const react_jsx_runtime = __toESM(require("react/jsx-runtime"));
+require("react");
 
 //#region src/ContactPage.tsx
 function ContactPage() {
@@ -377,6 +378,395 @@ function Compliance() {
 }
 
 //#endregion
+//#region src/SectionCTA.tsx
+function SectionCTA() {
+	return /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("section", {
+		style: {
+			background: "linear-gradient(135deg, #92CFFF 0%, #071db0d0 100%)",
+			color: "#fff",
+			padding: "4rem 2rem",
+			textAlign: "center"
+		},
+		children: [
+			/* @__PURE__ */ (0, react_jsx_runtime.jsx)("h1", {
+				style: {
+					fontSize: "2.5rem",
+					fontWeight: "700",
+					marginBottom: "1.5rem"
+				},
+				children: "Ready to Transform Your Infrastructure?"
+			}),
+			/* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
+				style: {
+					fontSize: "1.25rem",
+					maxWidth: "800px",
+					margin: "0 auto 2rem auto",
+					lineHeight: "1.6"
+				},
+				children: "opsZero Terraform modules help you build secure, scalable, and compliant cloud environments with ease."
+			}),
+			/* @__PURE__ */ (0, react_jsx_runtime.jsx)("a", {
+				className: "button button--primary",
+				style: {
+					backgroundColor: "#fff",
+					color: "#2D5EFF",
+					fontWeight: "600",
+					fontSize: "1rem",
+					padding: "0.75rem 1.5rem",
+					borderRadius: "8px",
+					textDecoration: "none",
+					display: "inline-block"
+				},
+				href: "https://calendly.com/opszero-llc/discovery?month=2024-08",
+				children: "Schedule Your Demo Now"
+			})
+		]
+	});
+}
+
+//#endregion
+//#region src/about.tsx
+function About({ headContent }) {
+	return /* @__PURE__ */ (0, react_jsx_runtime.jsxs)(react_jsx_runtime.Fragment, { children: [
+		headContent,
+		/* @__PURE__ */ (0, react_jsx_runtime.jsx)("section", {
+			className: "container padding-vert--xl",
+			children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+				className: "row",
+				children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+					className: "col col--5",
+					children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("h1", {
+						className: "padding-bottom--sm",
+						style: {
+							fontSize: "2.25rem",
+							lineHeight: "1.6"
+						},
+						children: [
+							"Trusted ",
+							/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
+							" Kubernetes ",
+							/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
+							" Infrastructure"
+						]
+					})
+				}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+					className: "col col--7",
+					children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("p", {
+						className: "margin-top--xs",
+						style: {
+							fontSize: "1.25rem",
+							lineHeight: "1.6"
+						},
+						children: [
+							"Our services are designed to enhance the productivity,",
+							/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
+							"security, compliance, reliability, and scalability of your ",
+							/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
+							"organization’s public cloud operations."
+						]
+					})
+				})]
+			})
+		}),
+		/* @__PURE__ */ (0, react_jsx_runtime.jsx)("section", {
+			className: "container padding-vert--xl",
+			children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+				className: "row",
+				children: [
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+						className: "col col--4",
+						children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+							className: "card",
+							style: { height: "100%" },
+							children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+								className: "card__body text--center",
+								children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+									style: {
+										fontSize: 36,
+										lineHeight: 1,
+										marginBottom: 8
+									},
+									children: "🛠️"
+								}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("h3", {
+									className: "margin-bottom--none",
+									children: "Productivity"
+								})]
+							})
+						})
+					}),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+						className: "col col--4",
+						children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+							className: "card",
+							style: { height: "100%" },
+							children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+								className: "card__body text--center",
+								children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+									style: {
+										fontSize: 36,
+										lineHeight: 1,
+										marginBottom: 8
+									},
+									children: "🔐"
+								}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("h3", {
+									className: "margin-bottom--none",
+									children: "Security & Compliance"
+								})]
+							})
+						})
+					}),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+						className: "col col--4",
+						children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+							className: "card",
+							style: { height: "100%" },
+							children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+								className: "card__body text--center",
+								children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+									style: {
+										fontSize: 36,
+										lineHeight: 1,
+										marginBottom: 8
+									},
+									children: "📈"
+								}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("h3", {
+									className: "margin-bottom--none",
+									children: "Scalability"
+								})]
+							})
+						})
+					})
+				]
+			})
+		}),
+		/* @__PURE__ */ (0, react_jsx_runtime.jsx)("section", {
+			style: {
+				backgroundColor: "#88a4b1ff",
+				padding: "4rem 0"
+			},
+			children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+				className: "container",
+				children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+					className: "row",
+					children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+						className: "col col--12",
+						children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("h1", {
+							className: "text--center margin-bottom--lg",
+							children: "Why is opsZero the trustworthy choice for leveraging the power of Kubernetes?"
+						})
+					})
+				}), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+					className: "row",
+					children: [
+						/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+							className: "col col--4",
+							children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+								className: "card__header",
+								children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("h4", {
+									className: "text--center",
+									children: "People-First"
+								})
+							}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+								className: "card__body",
+								children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
+									className: "text--center",
+									children: "Whether you’re a CTO, CEO, or Engineer, opsZero ensures your unique requirements are understood and addressed. We work closely with your team over Slack so your cloud infrastructure goals align with both technical and business objectives."
+								})
+							})]
+						}),
+						/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+							className: "col col--4",
+							children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+								className: "card__header",
+								children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("h4", {
+									className: "text--center",
+									children: "Partner-Focused"
+								})
+							}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+								className: "card__body",
+								children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
+									className: "text--center",
+									children: "We build win-win partnerships that deliver value. Our network of partners helps reduce costs, unlock needed technology, and drive your business objectives forward."
+								})
+							})]
+						}),
+						/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+							className: "col col--4",
+							children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+								className: "card__header",
+								children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("h4", {
+									className: "text--center",
+									children: "Think Long-Term"
+								})
+							}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+								className: "card__body",
+								children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
+									className: "text--center",
+									children: "We think you every stage of your growth and seek to anticipate what you need whether it is access to technology, infrastructure scalability, or security and compliance needs. We have your back."
+								})
+							})]
+						})
+					]
+				})]
+			})
+		}),
+		/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("section", {
+			className: "container padding-vert--xl",
+			children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("h1", {
+				className: "text--center margin-bottom--lg",
+				children: "Our Team"
+			}), /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+				className: "row",
+				children: [
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+						className: "col col--4",
+						children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+							className: "card",
+							style: { height: "100%" },
+							children: [
+								/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+									className: "card__image",
+									style: { padding: 24 },
+									children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
+										src: "https://i0.wp.com/opszero.com/wp-content/uploads/2024/03/Abhi-Yerra.png?resize=300%2C300&ssl=1",
+										alt: "Abhi Yerra",
+										width: 200,
+										height: 200,
+										style: {
+											display: "block",
+											margin: "0 auto",
+											borderRadius: "50%"
+										},
+										loading: "eager"
+									})
+								}),
+								/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+									className: "card__header text--center",
+									children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
+										className: "margin-bottom--xs",
+										style: { fontSize: "1.4rem" },
+										children: "Abhi Yerra"
+									}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("h5", {
+										className: "margin--none",
+										children: "CEO / Technical Lead"
+									})]
+								}),
+								/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+									className: "card__footer text--center",
+									children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("a", {
+										className: "button button--secondary button--sm",
+										href: "https://www.linkedin.com/in/abhiyerra/",
+										target: "_blank",
+										rel: "noreferrer",
+										"aria-label": "Abhi Yerra on LinkedIn",
+										children: "LinkedIn"
+									})
+								})
+							]
+						})
+					}),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+						className: "col col--4",
+						children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+							className: "card",
+							style: { height: "100%" },
+							children: [
+								/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+									className: "card__image",
+									style: { padding: 24 },
+									children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
+										src: "https://i0.wp.com/opszero.com/wp-content/uploads/2024/03/Michael-Doherty-.png?resize=300%2C300&ssl=1",
+										alt: "Michael Doherty",
+										width: 200,
+										height: 200,
+										style: {
+											display: "block",
+											margin: "0 auto",
+											borderRadius: "50%"
+										},
+										loading: "lazy"
+									})
+								}),
+								/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+									className: "card__header text--center",
+									children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
+										className: "margin-bottom--xs",
+										style: { fontSize: "1.4rem" },
+										children: "Michael Doherty"
+									}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("h5", {
+										className: "margin--none",
+										children: "VP of Operations and Partnerships"
+									})]
+								}),
+								/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+									className: "card__footer text--center",
+									children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("a", {
+										className: "button button--secondary button--sm",
+										href: "https://www.linkedin.com/in/mzdoherty/",
+										target: "_blank",
+										rel: "noreferrer",
+										"aria-label": "Michael Doherty on LinkedIn",
+										children: "LinkedIn"
+									})
+								})
+							]
+						})
+					}),
+					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+						className: "col col--4",
+						children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+							className: "card",
+							style: { height: "100%" },
+							children: [
+								/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+									className: "card__image",
+									style: { padding: 24 },
+									children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
+										src: "https://i0.wp.com/opszero.com/wp-content/uploads/2024/03/Mark-Beasley.png?resize=300%2C300&ssl=1",
+										alt: "Mark Beasley",
+										width: 200,
+										height: 200,
+										style: {
+											display: "block",
+											margin: "0 auto",
+											borderRadius: "50%"
+										},
+										loading: "lazy"
+									})
+								}),
+								/* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
+									className: "card__header text--center",
+									children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("p", {
+										className: "margin-bottom--xs",
+										style: { fontSize: "1.4rem" },
+										children: "Mark Beasley"
+									}), /* @__PURE__ */ (0, react_jsx_runtime.jsx)("h5", {
+										className: "margin--none",
+										children: "Senior Sales Executive"
+									})]
+								}),
+								/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
+									className: "card__footer text--center",
+									children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("a", {
+										className: "button button--secondary button--sm",
+										href: "https://www.linkedin.com/in/markbeasley2000/",
+										target: "_blank",
+										rel: "noreferrer",
+										"aria-label": "Mark Beasley on LinkedIn",
+										children: "LinkedIn"
+									})
+								})
+							]
+						})
+					})
+				]
+			})]
+		}),
+		/* @__PURE__ */ (0, react_jsx_runtime.jsx)(SectionCTA, {})
+	] });
+}
+
+//#endregion
 //#region src/index.tsx
 const cloudAIItems = [
 	{
@@ -562,6 +952,7 @@ function copyrightFooter() {
 }
 
 //#endregion
+exports.About = About;
 exports.Compliance = Compliance;
 exports.ContactPage = ContactPage;
 exports.Privacy = Privacy;
