@@ -9,7 +9,6 @@ export const cloudAIItems = [
     { label: 'PolicyCop - Your Compliance Team', href: 'https://policycop.com' },
     { label: 'deepfacts.ai - Your AI Team', href: 'https://deepfacts.ai/' },
     { label: 'DiscountCloud.io - Up to 5% Off Cloud Bills', href: 'https://discountcloud.io/' },
-    { label: 'OMYAC - Cloud Waste Finder', href: 'https://omyac.cloud' },
 ]
 
 export const footerLinks = [
