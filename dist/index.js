@@ -21,7 +21,8 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 }) : target, mod));
 
 //#endregion
-const react_jsx_runtime = __toESM(require("react/jsx-runtime"));
+let react_jsx_runtime = require("react/jsx-runtime");
+react_jsx_runtime = __toESM(react_jsx_runtime);
 require("react");
 
 //#region src/ContactPage.tsx
@@ -788,10 +789,6 @@ const cloudAIItems = [
 	{
 		label: "DiscountCloud.io - Up to 5% Off Cloud Bills",
 		href: "https://discountcloud.io/"
-	},
-	{
-		label: "OMYAC - Cloud Waste Finder",
-		href: "https://omyac.cloud"
 	}
 ];
 const footerLinks = [
@@ -855,8 +852,8 @@ const footerLinks = [
 	}
 ];
 function copyrightFooter() {
-	const year = (/* @__PURE__ */ new Date()).getFullYear();
-	const style = `
+	return `
+<style>
 .footer--light {
   background-color: #fff !important;
   color: #000 !important;
@@ -898,9 +895,7 @@ function copyrightFooter() {
 .social-links img {
   height: 24px;
 }
-    `;
-	return `
-<style>${style}</style>
+    </style>
 
 <div class="footer-badges">
                 <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
@@ -916,7 +911,7 @@ function copyrightFooter() {
                             <a href="https://opszero.com"><img src="https://opszero.com/img/common/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" /></a>
                         </div>
                         <div class="col col--4">
-                            <p>©2016–${year} opsZero, LLC </p>
+                            <p>©2016–${(/* @__PURE__ */ new Date()).getFullYear()} opsZero, LLC </p>
                         </div>
                         <div class="col col--4">
                             <div style="display: flex; justify-content: center; gap: 1rem;">
