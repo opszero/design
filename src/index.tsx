@@ -7,8 +7,8 @@ export const cloudAIItems = [
     { label: 'Kubespot - Your Kubernetes Team', href: 'https://kubespot.com' },
     { label: 'DBAZero - Your Database Team', href: 'https://dbazero.com' },
     { label: 'PolicyCop - Your Compliance Team', href: 'https://policycop.com' },
-    { label: 'deepfacts.ai - Your AI Team', href: 'https://deepfacts.ai/' },
-    { label: 'DiscountCloud.io - Up to 5% Off Cloud Bills', href: 'https://discountcloud.io/' },
+    { label: 'Deepfacts - Your AI Team', href: 'https://deepfacts.ai/' },
+    { label: 'DiscountCloud - Your FinOps Team', href: 'https://discountcloud.io/' },
 ]
 
 export const footerLinks = [

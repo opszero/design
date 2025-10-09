@@ -759,11 +759,11 @@ const cloudAIItems = [
 		href: "https://policycop.com"
 	},
 	{
-		label: "deepfacts.ai - Your AI Team",
+		label: "Deepfacts - Your AI Team",
 		href: "https://deepfacts.ai/"
 	},
 	{
-		label: "DiscountCloud.io - Up to 5% Off Cloud Bills",
+		label: "DiscountCloud - Your FinOps Team",
 		href: "https://discountcloud.io/"
 	}
 ];
