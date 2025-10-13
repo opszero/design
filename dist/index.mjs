@@ -45,7 +45,7 @@ function ContactPage() {
 				className: "col col--6",
 				style: { textAlign: "center" },
 				children: /* @__PURE__ */ jsx("img", {
-					src: "/img/OpsZero-Contact.png",
+					src: "https://opszero.com/img/common/opszero-contact.png",
 					alt: "Contact",
 					style: {
 						maxWidth: "100%",
@@ -60,22 +60,18 @@ function ContactPage() {
 			className: "row",
 			children: [/* @__PURE__ */ jsxs("div", {
 				className: "col col--9",
-				children: [
-					/* @__PURE__ */ jsx("h3", { children: "Book a time with us:" }),
-					/* @__PURE__ */ jsx("div", {
-						className: "calendly-inline-widget",
-						"data-url": "https://calendly.com/opszero-llc/discovery",
-						style: {
-							minWidth: "320px",
-							height: "700px"
-						}
-					}),
-					/* @__PURE__ */ jsx("script", {
-						type: "text/javascript",
-						src: "https://assets.calendly.com/assets/external/widget.js",
-						async: true
-					})
-				]
+				children: [/* @__PURE__ */ jsx("div", {
+					className: "calendly-inline-widget",
+					"data-url": "https://calendly.com/opszero-llc/discovery",
+					style: {
+						minWidth: "320px",
+						height: "1200px"
+					}
+				}), /* @__PURE__ */ jsx("script", {
+					type: "text/javascript",
+					src: "https://assets.calendly.com/assets/external/widget.js",
+					async: true
+				})]
 			}), /* @__PURE__ */ jsxs("div", {
 				className: "col col--3",
 				children: [
@@ -751,44 +747,47 @@ function About({ headContent }) {
 //#region src/index.tsx
 const cloudAIItems = [
 	{
-		label: "Kubespot - Compliance and AI Ready Kubernetes",
+		label: "Kubespot - Your Kubernetes Team",
 		href: "https://kubespot.com"
 	},
 	{
-		label: "DBAZero - Database Performance Tuning",
+		label: "DBAZero - Your Database Team",
 		href: "https://dbazero.com"
 	},
 	{
-		label: "PolicyCop - SOC2/HIPAA/FedRamp Compliance Remediation",
+		label: "PolicyCop - Your Compliance Team",
 		href: "https://policycop.com"
 	},
 	{
-		label: "DiscountCloud.io - Up to 5% Off Cloud Bills",
-		href: "https://discountcloud.io/"
-	},
-	{
-		label: "OMYAC - Cloud Waste Finder",
-		href: "https://omyac.cloud"
-	},
-	{
-		label: "deepfacts.ai - Healthcare AI",
+		label: "Deepfacts - Your AI Team",
 		href: "https://deepfacts.ai/"
+	},
+	{
+		label: "DiscountCloud - Your FinOps Team",
+		href: "https://discountcloud.io/"
 	}
 ];
 const footerLinks = [
 	{
-		title: "Cloud + AI",
+		title: "Your Cloud + AI Team",
 		items: cloudAIItems
 	},
 	{
 		title: "Marketplaces",
-		items: [{
-			label: "AWS Marketplace",
-			href: "https://aws.amazon.com/marketplace/seller-profile?id=1cfa0be5-3fcc-417a-83a8-eac1274450c3"
-		}, {
-			label: "Terraform Registry",
-			href: "https://registry.terraform.io/namespaces/opszero"
-		}]
+		items: [
+			{
+				label: "AWS Marketplace",
+				href: "https://aws.amazon.com/marketplace/seller-profile?id=1cfa0be5-3fcc-417a-83a8-eac1274450c3"
+			},
+			{
+				label: "Terraform Registry",
+				href: "https://registry.terraform.io/namespaces/opszero"
+			},
+			{
+				label: "AI Platform Alliance",
+				href: "https://platformalliance.ai/company/opszero/"
+			}
+		]
 	},
 	{
 		title: "Resources",
@@ -875,17 +874,17 @@ function copyrightFooter() {
     </style>
 
 <div class="footer-badges">
-                <img src="img/aws-advanced.png" alt="AWS Advanced Tier" />
-                <img src="img/aws-devops-competency.png" alt="AWS DevOps Competency" />
-                <img src="img/aws-eks.png" alt="AWS EKS Delivery" />
-                <img src="img/aws-public-sector.png" alt="AWS Public Sector" />
-                <img src="img/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+                <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
+                <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
+                <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
+                <img src="https://opszero.com/img/common/aws-public-sector.png" alt="AWS Public Sector" />
+                <img src="https://opszero.com/img/common/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
             </div>
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row" style="align-items: center; text-align: center;">
                         <div class="col col--4">
-                            <img src="img/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" />
+                            <a href="https://opszero.com"><img src="https://opszero.com/img/common/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" /></a>
                         </div>
                         <div class="col col--4">
                             <p>©2016–${(/* @__PURE__ */ new Date()).getFullYear()} opsZero, LLC </p>
@@ -899,7 +898,7 @@ function copyrightFooter() {
                                     title="LinkedIn"
                                 >
                                     <img
-                                        src="img/LinkedIn.svg"
+                                        src="https://opszero.com/img/common/linkedin.svg"
                                         alt="LinkedIn"
                                         style="height: 28px;"
                                     />
@@ -911,7 +910,7 @@ function copyrightFooter() {
                                     title="GitHub"
                                 >
                                     <img
-                                        src="img/GitHub.svg"
+                                        src="https://opszero.com/img/common/github.svg"
                                         alt="GitHub"
                                         style="height: 28px;"
                                     />
