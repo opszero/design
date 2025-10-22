@@ -775,19 +775,19 @@ const cloudAIItems = [
 		href: "https://kubespot.com"
 	},
 	{
-		label: "DBAZero - Your Database Team",
-		href: "https://dbazero.com"
+		label: "Deepfacts - Your AI Team",
+		href: "https://deepfacts.ai/"
 	},
 	{
 		label: "PolicyCop - Your Compliance Team",
 		href: "https://policycop.com"
 	},
 	{
-		label: "Deepfacts - Your AI Team",
-		href: "https://deepfacts.ai/"
+		label: "DBAZero - Database Performance Tuning",
+		href: "https://dbazero.com"
 	},
 	{
-		label: "DiscountCloud - Your FinOps Team",
+		label: "DiscountCloud - Up to 5% off your Cloud Bill",
 		href: "https://discountcloud.io/"
 	}
 ];
