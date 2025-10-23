@@ -1,6 +1,12 @@
+import React from "react";
 
+interface ContactPageProps {
+  calendlyLink?: string;
+}
 
-export function ContactPage() {
+export function ContactPage({
+  calendlyLink = "https://calendly.com/opszero-llc/discovery",
+}: ContactPageProps) {
   return (
     <main>
       {/* Top Section */}
@@ -10,14 +16,14 @@ export function ContactPage() {
           <div className="col col--6">
             <h1 style={{ fontSize: 50, lineHeight: 1.5 }}>How can we help?</h1>
             <p style={{ fontSize: 20, lineHeight: 1.5, marginBottom: 30 }}>
-              We are committed to building long-lasting  <br />
-              partnerships that  drive innovation and look forward  <br />
-              to learning more about the vision of your<br />
+              We are committed to building long-lasting <br />
+              partnerships that drive innovation and look forward <br />
+              to learning more about the vision of your <br />
               organization.
             </p>
             <a
               className="button button--primary"
-              href="https://calendly.com/opszero-llc/discovery"
+              href={calendlyLink}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -36,14 +42,12 @@ export function ContactPage() {
         </div>
       </section>
 
-      {/* Calendly + Contact Info Section */}
       <section className="container padding-vert--xl">
         <div className="row">
-          {/* Calendly Embed Column */}
           <div className="col col--9">
             <div
               className="calendly-inline-widget"
-              data-url="https://calendly.com/opszero-llc/discovery"
+              data-url={calendlyLink}
               style={{ minWidth: "320px", height: "1200px" }}
             ></div>
             <script
@@ -52,6 +56,7 @@ export function ContactPage() {
               async
             ></script>
           </div>
+
           {/* Contact Info Column */}
           <div className="col col--3">
             <h3 style={{ color: "#1d4ed8" }}>Contact</h3>
@@ -70,7 +75,6 @@ export function ContactPage() {
         </div>
       </section>
     </main>
-
   );
 }
 
