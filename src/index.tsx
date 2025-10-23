@@ -27,7 +27,7 @@ export const footerLinks = [
     {
         title: 'Resources',
         items: [
-            { label: 'Docs', to: '/docs' },
+           // { label: 'Docs', to: '/docs' },
             { label: 'Blog', to: '/blog' },
             { label: 'GitHub', href: 'https://github.com/opszero' },
             { label: 'Status', href: 'https://status.opszero.com/' },

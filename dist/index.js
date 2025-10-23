@@ -817,10 +817,6 @@ const footerLinks = [
 		title: "Resources",
 		items: [
 			{
-				label: "Docs",
-				to: "/docs"
-			},
-			{
 				label: "Blog",
 				to: "/blog"
 			},
