@@ -21,12 +21,12 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 }) : target, mod));
 
 //#endregion
+require("react");
 let react_jsx_runtime = require("react/jsx-runtime");
 react_jsx_runtime = __toESM(react_jsx_runtime);
-require("react");
 
 //#region src/ContactPage.tsx
-function ContactPage() {
+function ContactPage({ calendlyLink = "https://calendly.com/opszero-llc/discovery" }) {
 	return /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("main", { children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("section", {
 		className: "container padding-vert--xl",
 		children: /* @__PURE__ */ (0, react_jsx_runtime.jsxs)("div", {
@@ -48,18 +48,18 @@ function ContactPage() {
 							marginBottom: 30
 						},
 						children: [
-							"We are committed to building long-lasting  ",
+							"We are committed to building long-lasting ",
 							/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
-							"partnerships that  drive innovation and look forward  ",
+							"partnerships that drive innovation and look forward ",
 							/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
-							"to learning more about the vision of your",
+							"to learning more about the vision of your ",
 							/* @__PURE__ */ (0, react_jsx_runtime.jsx)("br", {}),
 							"organization."
 						]
 					}),
 					/* @__PURE__ */ (0, react_jsx_runtime.jsx)("a", {
 						className: "button button--primary",
-						href: "https://calendly.com/opszero-llc/discovery",
+						href: calendlyLink,
 						target: "_blank",
 						rel: "noopener noreferrer",
 						children: "Schedule a call"
@@ -86,7 +86,7 @@ function ContactPage() {
 				className: "col col--9",
 				children: [/* @__PURE__ */ (0, react_jsx_runtime.jsx)("div", {
 					className: "calendly-inline-widget",
-					"data-url": "https://calendly.com/opszero-llc/discovery",
+					"data-url": calendlyLink,
 					style: {
 						minWidth: "320px",
 						height: "1200px"

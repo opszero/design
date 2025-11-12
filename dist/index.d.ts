@@ -2,7 +2,12 @@ import * as react_jsx_runtime3 from "react/jsx-runtime";
 import { ReactNode } from "react";
 
 //#region src/ContactPage.d.ts
-declare function ContactPage(): react_jsx_runtime3.JSX.Element;
+interface ContactPageProps {
+  calendlyLink?: string;
+}
+declare function ContactPage({
+  calendlyLink
+}: ContactPageProps): react_jsx_runtime3.JSX.Element;
 //#endregion
 //#region src/Privacy.d.ts
 declare function Privacy(): react_jsx_runtime3.JSX.Element;
