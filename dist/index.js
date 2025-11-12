@@ -787,7 +787,7 @@ const cloudAIItems = [
 		href: "https://dbazero.com"
 	},
 	{
-		label: "DiscountCloud - Up to 5% off your Cloud Bill",
+		label: "DiscountCloud - Up to 5% off your Cloud Bills",
 		href: "https://discountcloud.io/"
 	}
 ];
