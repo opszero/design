@@ -629,7 +629,7 @@ function About({ headContent }) {
 									className: "card__image",
 									style: { padding: 24 },
 									children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
-										src: "https://i0.wp.com/opszero.com/wp-content/uploads/2024/03/Abhi-Yerra.png?resize=300%2C300&ssl=1",
+										src: "https://opszero.com/uploads/2024/03/Abhi-Yerra.png",
 										alt: "Abhi Yerra",
 										width: 200,
 										height: 200,
@@ -676,7 +676,7 @@ function About({ headContent }) {
 									className: "card__image",
 									style: { padding: 24 },
 									children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
-										src: "https://i0.wp.com/opszero.com/wp-content/uploads/2024/03/Michael-Doherty-.png?resize=300%2C300&ssl=1",
+										src: "https://opszero.com/uploads/2024/03/Michael-Doherty-.png",
 										alt: "Michael Doherty",
 										width: 200,
 										height: 200,
@@ -723,7 +723,7 @@ function About({ headContent }) {
 									className: "card__image",
 									style: { padding: 24 },
 									children: /* @__PURE__ */ (0, react_jsx_runtime.jsx)("img", {
-										src: "https://i0.wp.com/opszero.com/wp-content/uploads/2024/03/Mark-Beasley.png?resize=300%2C300&ssl=1",
+										src: "https://opszero.com/uploads/2024/03/Mark-Beasley.png",
 										alt: "Mark Beasley",
 										width: 200,
 										height: 200,
