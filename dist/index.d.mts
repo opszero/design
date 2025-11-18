@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import * as react_jsx_runtime1 from "react/jsx-runtime";
+import * as react_jsx_runtime0 from "react/jsx-runtime";
 
 //#region src/ContactPage.d.ts
 interface ContactPageProps {
@@ -7,16 +7,16 @@ interface ContactPageProps {
 }
 declare function ContactPage({
   calendlyLink
-}: ContactPageProps): react_jsx_runtime1.JSX.Element;
+}: ContactPageProps): react_jsx_runtime0.JSX.Element;
 //#endregion
 //#region src/Privacy.d.ts
-declare function Privacy(): react_jsx_runtime1.JSX.Element;
+declare function Privacy(): react_jsx_runtime0.JSX.Element;
 //#endregion
 //#region src/TermsOfService.d.ts
-declare function TermsOfService(): react_jsx_runtime1.JSX.Element;
+declare function TermsOfService(): react_jsx_runtime0.JSX.Element;
 //#endregion
 //#region src/Compliance.d.ts
-declare function Compliance(): react_jsx_runtime1.JSX.Element;
+declare function Compliance(): react_jsx_runtime0.JSX.Element;
 //#endregion
 //#region src/about.d.ts
 type Props = {
@@ -24,7 +24,7 @@ type Props = {
 };
 declare function About({
   headContent
-}: Props): react_jsx_runtime1.JSX.Element;
+}: Props): react_jsx_runtime0.JSX.Element;
 //#endregion
 //#region src/index.d.ts
 declare const cloudAIItems: {
