@@ -3,13 +3,14 @@ export { Privacy } from "./Privacy";
 export { TermsOfService } from "./TermsOfService";
 export { Compliance } from "./Compliance";
 export { About } from "./about";
+
 export const cloudAIItems = [
     { label: 'Kubespot - Your Kubernetes Team', href: 'https://kubespot.com' },
     { label: 'Deepfacts - Your AI Team', href: 'https://deepfacts.ai/' },
     { label: 'PolicyCop - Your Compliance Team', href: 'https://policycop.com' },
     { label: 'DBAZero - Database Performance Tuning', href: 'https://dbazero.com' },
     { label: 'DiscountCloud - Up to 5% off your Cloud Bills', href: 'https://discountcloud.io/' },
-]
+];
 
 export const footerLinks = [
     {
@@ -35,18 +36,8 @@ export const footerLinks = [
             { label: 'Terms of Service', to: '/terms-of-service' },
             { label: 'Compliance', to: '/compliance' },
             { label: 'Contact', to: '/contact' },
-            // { label: 'Capabilities Statement', to: '/capabilities' },
         ],
     },
-    // {
-    //   title: 'Public Sector',
-    //   items: [
-    //     { label: 'CAGE: 9HYJ2', href: '#' },
-    //     { label: 'DUNS: 080876128', href: '#' },
-    //     { label: 'UEI: ZT4AR949B5T3', href: '#' },
-
-    //   ],
-    // },
 ];
 
 export function copyrightFooter(): string {
@@ -93,57 +84,50 @@ export function copyrightFooter(): string {
 .social-links img {
   height: 24px;
 }
-    `
-
+`;
 
     return `
 <style>${style}</style>
 
 <div class="footer-badges">
-                <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
-                <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
-                <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
-                <img src="https://opszero.com/img/common/aws-public-sector.png" alt="AWS Public Sector" />
-                <img src="https://opszero.com/img/common/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+    <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
+    <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
+    <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
+    <img src="https://opszero.com/img/common/aws-public-sector.png" alt="AWS Public Sector" />
+    <img src="https://opszero.com/img/common/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+</div>
+
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row" style="align-items: center; text-align: center;">
+            <div class="col col--4">
+                <a href="https://opszero.com">
+                    <img src="https://opszero.com/img/common/opsZero-Logo-Large.webp"
+                         alt="opsZero" style="max-width: 200px; height: auto;" />
+                </a>
             </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row" style="align-items: center; text-align: center;">
-                        <div class="col col--4">
-                            <a href="https://opszero.com"><img src="https://opszero.com/img/common/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" /></a>
-                        </div>
-                        <div class="col col--4">
-                            <p>©2016–${year} opsZero, LLC </p>
-                        </div>
-                        <div class="col col--4">
-                            <div style="display: flex; justify-content: center; gap: 1rem;">
-                                <a
-                                    href="https://www.linkedin.com/company/opszero/"
-                                    target="_blank"
-                                    rel="noopener"
-                                    title="LinkedIn"
-                                >
-                                    <img
-                                        src="https://opszero.com/img/common/linkedin.svg"
-                                        alt="LinkedIn"
-                                        style="height: 28px;"
-                                    />
-                                </a>
-                                <a
-                                    href="https://github.com/opszero"
-                                    target="_blank"
-                                    rel="noopener"
-                                    title="GitHub"
-                                >
-                                    <img
-                                        src="https://opszero.com/img/common/github.svg"
-                                        alt="GitHub"
-                                        style="height: 28px;"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
+            <div class="col col--4">
+                <p>©2016–${year} opsZero, LLC</p>
+            </div>
+
+            <div class="col col--4">
+                <div style="display: flex; justify-content: center; gap: 1rem;">
+                    <a href="https://www.linkedin.com/company/opszero/"
+                       target="_blank" rel="noopener" title="LinkedIn">
+                       <img src="https://opszero.com/img/common/linkedin.svg"
+                            alt="LinkedIn" style="height: 28px;" />
+                    </a>
+
+                    <a href="https://github.com/opszero"
+                       target="_blank" rel="noopener" title="GitHub">
+                       <img src="https://opszero.com/img/common/github.svg"
+                            alt="GitHub" style="height: 28px;" />
+                    </a>
                 </div>
-            </div>`;
+            </div>
+        </div>
+    </div>
+</div>
+`;
 }
