@@ -3,9 +3,10 @@ import { SectionCTA } from "./SectionCTA";
 
 type Props = {
   headContent?: ReactNode;
+  authors?: any;
 };
 
-export function About({ headContent }: Props) {
+export function About({ headContent, authors }: Props) {
   return (
     <>
       {headContent}
@@ -27,7 +28,7 @@ export function About({ headContent }: Props) {
               Our services are designed to enhance the productivity,
               <br />
               security, compliance, reliability, and scalability of your <br />
-              organization’s public cloud operations.
+              organization's public cloud operations.
             </p>
           </div>
         </div>
@@ -87,7 +88,7 @@ export function About({ headContent }: Props) {
               </div>
               <div className="card__body">
                 <p className="text--center">
-                  Whether you’re a CTO, CEO, or Engineer, opsZero ensures your
+                  Whether you're a CTO, CEO, or Engineer, opsZero ensures your
                   unique requirements are understood and addressed. We work
                   closely with your team over Slack so your cloud infrastructure
                   goals align with both technical and business objectives.
@@ -129,117 +130,63 @@ export function About({ headContent }: Props) {
         <h1 className="text--center margin-bottom--lg">Our Team</h1>
 
         <div className="row">
-          <div className="col col--4">
-            <div className="card" style={{ height: "100%" }}>
-              <div className="card__image" style={{ padding: 24 }}>
-                <img
-                  src="https://opszero.com/uploads/2024/03/Abhi-Yerra.png"
-                  alt="Abhi Yerra"
-                  width={200}
-                  height={200}
-                  style={{
-                    display: "block",
-                    margin: "0 auto",
-                    borderRadius: "50%",
-                  }}
-                  loading="eager"
-                />
-              </div>
-              <div className="card__header text--center">
-                <p className="margin-bottom--xs" style={{ fontSize: "1.4rem" }}>
-                  Abhi Yerra
-                </p>
-                <h5 className="margin--none">CEO / Technical Lead</h5>
-              </div>
-              <div className="card__footer text--center">
-                <a
-                  className="button button--secondary button--sm"
-                  href="https://www.linkedin.com/in/abhiyerra/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Abhi Yerra on LinkedIn"
-                >
-                  LinkedIn
-                </a>
-              </div>
-            </div>
-          </div>
+          {authors &&
+            Object.entries(authors)
+              .filter(([_, author]: any) => author.active !== false)
+              .map(([key, author]: any) => (
+                <div className="col col--4" key={key}>
+                  
+                  {/* Added link wrapper here */}
+                  <a
+                    href={`/blog/authors/${key}`}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <div className="card" style={{ height: "100%" }}>
+                      <div className="card__image" style={{ padding: 24 }}>
+                        <img
+                          src={author.image_url}
+                          alt={author.name}
+                          width={200}
+                          height={200}
+                          style={{
+                            display: "block",
+                            margin: "0 auto",
+                            borderRadius: "50%",
+                          }}
+                          loading={key === "abhiyerra" ? "eager" : "lazy"}
+                        />
+                      </div>
 
-          <div className="col col--4">
-            <div className="card" style={{ height: "100%" }}>
-              <div className="card__image" style={{ padding: 24 }}>
-                <img
-                  src="https://opszero.com/uploads/2024/03/Michael-Doherty-.png"
-                  alt="Michael Doherty"
-                  width={200}
-                  height={200}
-                  style={{
-                    display: "block",
-                    margin: "0 auto",
-                    borderRadius: "50%",
-                  }}
-                  loading="lazy"
-                />
-              </div>
-              <div className="card__header text--center">
-                <p className="margin-bottom--xs" style={{ fontSize: "1.4rem" }}>
-                  Michael Doherty
-                </p>
-                <h5 className="margin--none">
-                  VP of Operations and Partnerships
-                </h5>
-              </div>
-              <div className="card__footer text--center">
-                <a
-                  className="button button--secondary button--sm"
-                  href="https://www.linkedin.com/in/mzdoherty/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Michael Doherty on LinkedIn"
-                >
-                  LinkedIn
-                </a>
-              </div>
-            </div>
-          </div>
+                      <div className="card__header text--center">
+                        <p
+                          className="margin-bottom--xs"
+                          style={{ fontSize: "1.4rem" }}
+                        >
+                          {author.name}
+                        </p>
+                        <h5 className="margin--none">{author.title}</h5>
+                      </div>
 
-          <div className="col col--4">
-            <div className="card" style={{ height: "100%" }}>
-              <div className="card__image" style={{ padding: 24 }}>
-                <img
-                  src="https://opszero.com/uploads/2024/03/Mark-Beasley.png"
-                  alt="Mark Beasley"
-                  width={200}
-                  height={200}
-                  style={{
-                    display: "block",
-                    margin: "0 auto",
-                    borderRadius: "50%",
-                  }}
-                  loading="lazy"
-                />
-              </div>
-              <div className="card__header text--center">
-                <p className="margin-bottom--xs" style={{ fontSize: "1.4rem" }}>
-                  Mark Beasley
-                </p>
-                <h5 className="margin--none">Senior Sales Executive</h5>
-              </div>
-              <div className="card__footer text--center">
-                <a
-                  className="button button--secondary button--sm"
-                  href="https://www.linkedin.com/in/markbeasley2000/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Mark Beasley on LinkedIn"
-                >
-                  LinkedIn
-                </a>
-              </div>
-            </div>
-          </div>
+                      <div className="card__footer text--center">
+                        {author.socials?.linkedin && (
+                          <a
+                            className="button button--secondary button--sm"
+                            href={`https://www.linkedin.com/in/${author.socials.linkedin}/`}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            LinkedIn
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              ))}
         </div>
       </section>
+
       <SectionCTA />
     </>
   );

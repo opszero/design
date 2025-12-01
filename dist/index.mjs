@@ -403,7 +403,7 @@ function SectionCTA() {
 
 //#endregion
 //#region src/about.tsx
-function About({ headContent }) {
+function About({ headContent, authors }) {
 	return /* @__PURE__ */ jsxs(Fragment, { children: [
 		headContent,
 		/* @__PURE__ */ jsx("section", {
@@ -439,7 +439,7 @@ function About({ headContent }) {
 							/* @__PURE__ */ jsx("br", {}),
 							"security, compliance, reliability, and scalability of your ",
 							/* @__PURE__ */ jsx("br", {}),
-							"organization’s public cloud operations."
+							"organization's public cloud operations."
 						]
 					})
 				})]
@@ -547,7 +547,7 @@ function About({ headContent }) {
 								className: "card__body",
 								children: /* @__PURE__ */ jsx("p", {
 									className: "text--center",
-									children: "Whether you’re a CTO, CEO, or Engineer, opsZero ensures your unique requirements are understood and addressed. We work closely with your team over Slack so your cloud infrastructure goals align with both technical and business objectives."
+									children: "Whether you're a CTO, CEO, or Engineer, opsZero ensures your unique requirements are understood and addressed. We work closely with your team over Slack so your cloud infrastructure goals align with both technical and business objectives."
 								})
 							})]
 						}),
@@ -592,11 +592,16 @@ function About({ headContent }) {
 			children: [/* @__PURE__ */ jsx("h1", {
 				className: "text--center margin-bottom--lg",
 				children: "Our Team"
-			}), /* @__PURE__ */ jsxs("div", {
+			}), /* @__PURE__ */ jsx("div", {
 				className: "row",
-				children: [
-					/* @__PURE__ */ jsx("div", {
-						className: "col col--4",
+				children: authors && Object.entries(authors).filter(([_, author]) => author.active !== false).map(([key, author]) => /* @__PURE__ */ jsx("div", {
+					className: "col col--4",
+					children: /* @__PURE__ */ jsx("a", {
+						href: `/blog/authors/${key}`,
+						style: {
+							textDecoration: "none",
+							color: "inherit"
+						},
 						children: /* @__PURE__ */ jsxs("div", {
 							className: "card",
 							style: { height: "100%" },
@@ -605,8 +610,8 @@ function About({ headContent }) {
 									className: "card__image",
 									style: { padding: 24 },
 									children: /* @__PURE__ */ jsx("img", {
-										src: "https://opszero.com/uploads/2024/03/Abhi-Yerra.png",
-										alt: "Abhi Yerra",
+										src: author.image_url,
+										alt: author.name,
 										width: 200,
 										height: 200,
 										style: {
@@ -614,7 +619,7 @@ function About({ headContent }) {
 											margin: "0 auto",
 											borderRadius: "50%"
 										},
-										loading: "eager"
+										loading: key === "abhiyerra" ? "eager" : "lazy"
 									})
 								}),
 								/* @__PURE__ */ jsxs("div", {
@@ -622,121 +627,27 @@ function About({ headContent }) {
 									children: [/* @__PURE__ */ jsx("p", {
 										className: "margin-bottom--xs",
 										style: { fontSize: "1.4rem" },
-										children: "Abhi Yerra"
+										children: author.name
 									}), /* @__PURE__ */ jsx("h5", {
 										className: "margin--none",
-										children: "CEO / Technical Lead"
+										children: author.title
 									})]
 								}),
 								/* @__PURE__ */ jsx("div", {
 									className: "card__footer text--center",
-									children: /* @__PURE__ */ jsx("a", {
+									children: author.socials?.linkedin && /* @__PURE__ */ jsx("a", {
 										className: "button button--secondary button--sm",
-										href: "https://www.linkedin.com/in/abhiyerra/",
+										href: `https://www.linkedin.com/in/${author.socials.linkedin}/`,
 										target: "_blank",
 										rel: "noreferrer",
-										"aria-label": "Abhi Yerra on LinkedIn",
-										children: "LinkedIn"
-									})
-								})
-							]
-						})
-					}),
-					/* @__PURE__ */ jsx("div", {
-						className: "col col--4",
-						children: /* @__PURE__ */ jsxs("div", {
-							className: "card",
-							style: { height: "100%" },
-							children: [
-								/* @__PURE__ */ jsx("div", {
-									className: "card__image",
-									style: { padding: 24 },
-									children: /* @__PURE__ */ jsx("img", {
-										src: "https://opszero.com/uploads/2024/03/Michael-Doherty-.png",
-										alt: "Michael Doherty",
-										width: 200,
-										height: 200,
-										style: {
-											display: "block",
-											margin: "0 auto",
-											borderRadius: "50%"
-										},
-										loading: "lazy"
-									})
-								}),
-								/* @__PURE__ */ jsxs("div", {
-									className: "card__header text--center",
-									children: [/* @__PURE__ */ jsx("p", {
-										className: "margin-bottom--xs",
-										style: { fontSize: "1.4rem" },
-										children: "Michael Doherty"
-									}), /* @__PURE__ */ jsx("h5", {
-										className: "margin--none",
-										children: "VP of Operations and Partnerships"
-									})]
-								}),
-								/* @__PURE__ */ jsx("div", {
-									className: "card__footer text--center",
-									children: /* @__PURE__ */ jsx("a", {
-										className: "button button--secondary button--sm",
-										href: "https://www.linkedin.com/in/mzdoherty/",
-										target: "_blank",
-										rel: "noreferrer",
-										"aria-label": "Michael Doherty on LinkedIn",
-										children: "LinkedIn"
-									})
-								})
-							]
-						})
-					}),
-					/* @__PURE__ */ jsx("div", {
-						className: "col col--4",
-						children: /* @__PURE__ */ jsxs("div", {
-							className: "card",
-							style: { height: "100%" },
-							children: [
-								/* @__PURE__ */ jsx("div", {
-									className: "card__image",
-									style: { padding: 24 },
-									children: /* @__PURE__ */ jsx("img", {
-										src: "https://opszero.com/uploads/2024/03/Mark-Beasley.png",
-										alt: "Mark Beasley",
-										width: 200,
-										height: 200,
-										style: {
-											display: "block",
-											margin: "0 auto",
-											borderRadius: "50%"
-										},
-										loading: "lazy"
-									})
-								}),
-								/* @__PURE__ */ jsxs("div", {
-									className: "card__header text--center",
-									children: [/* @__PURE__ */ jsx("p", {
-										className: "margin-bottom--xs",
-										style: { fontSize: "1.4rem" },
-										children: "Mark Beasley"
-									}), /* @__PURE__ */ jsx("h5", {
-										className: "margin--none",
-										children: "Senior Sales Executive"
-									})]
-								}),
-								/* @__PURE__ */ jsx("div", {
-									className: "card__footer text--center",
-									children: /* @__PURE__ */ jsx("a", {
-										className: "button button--secondary button--sm",
-										href: "https://www.linkedin.com/in/markbeasley2000/",
-										target: "_blank",
-										rel: "noreferrer",
-										"aria-label": "Mark Beasley on LinkedIn",
+										onClick: (e) => e.stopPropagation(),
 										children: "LinkedIn"
 									})
 								})
 							]
 						})
 					})
-				]
+				}, key))
 			})]
 		}),
 		/* @__PURE__ */ jsx(SectionCTA, {})
@@ -871,55 +782,49 @@ function copyrightFooter() {
 .social-links img {
   height: 24px;
 }
-    </style>
+</style>
 
 <div class="footer-badges">
-                <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
-                <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
-                <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
-                <img src="https://opszero.com/img/common/aws-public-sector.png" alt="AWS Public Sector" />
-                <img src="https://opszero.com/img/common/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+    <img src="https://opszero.com/img/common/aws-advanced.png" alt="AWS Advanced Tier" />
+    <img src="https://opszero.com/img/common/aws-devops-competency.png" alt="AWS DevOps Competency" />
+    <img src="https://opszero.com/img/common/aws-eks.png" alt="AWS EKS Delivery" />
+    <img src="https://opszero.com/img/common/aws-public-sector.png" alt="AWS Public Sector" />
+    <img src="https://opszero.com/img/common/cmmc-cyberab.webp" alt="Cyber AB CMMC" />
+</div>
+
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row" style="align-items: center; text-align: center;">
+            <div class="col col--4">
+                <a href="https://opszero.com">
+                    <img src="https://opszero.com/img/common/opsZero-Logo-Large.webp"
+                         alt="opsZero" style="max-width: 200px; height: auto;" />
+                </a>
             </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row" style="align-items: center; text-align: center;">
-                        <div class="col col--4">
-                            <a href="https://opszero.com"><img src="https://opszero.com/img/common/opsZero-Logo-Large.webp" alt="opsZero" style="max-width: 200px; height: auto;" /></a>
-                        </div>
-                        <div class="col col--4">
-                            <p>©2016–${(/* @__PURE__ */ new Date()).getFullYear()} opsZero, LLC </p>
-                        </div>
-                        <div class="col col--4">
-                            <div style="display: flex; justify-content: center; gap: 1rem;">
-                                <a
-                                    href="https://www.linkedin.com/company/opszero/"
-                                    target="_blank"
-                                    rel="noopener"
-                                    title="LinkedIn"
-                                >
-                                    <img
-                                        src="https://opszero.com/img/common/linkedin.svg"
-                                        alt="LinkedIn"
-                                        style="height: 28px;"
-                                    />
-                                </a>
-                                <a
-                                    href="https://github.com/opszero"
-                                    target="_blank"
-                                    rel="noopener"
-                                    title="GitHub"
-                                >
-                                    <img
-                                        src="https://opszero.com/img/common/github.svg"
-                                        alt="GitHub"
-                                        style="height: 28px;"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
+            <div class="col col--4">
+                <p>©2016–${(/* @__PURE__ */ new Date()).getFullYear()} opsZero, LLC</p>
+            </div>
+
+            <div class="col col--4">
+                <div style="display: flex; justify-content: center; gap: 1rem;">
+                    <a href="https://www.linkedin.com/company/opszero/"
+                       target="_blank" rel="noopener" title="LinkedIn">
+                       <img src="https://opszero.com/img/common/linkedin.svg"
+                            alt="LinkedIn" style="height: 28px;" />
+                    </a>
+
+                    <a href="https://github.com/opszero"
+                       target="_blank" rel="noopener" title="GitHub">
+                       <img src="https://opszero.com/img/common/github.svg"
+                            alt="GitHub" style="height: 28px;" />
+                    </a>
                 </div>
-            </div>`;
+            </div>
+        </div>
+    </div>
+</div>
+`;
 }
 
 //#endregion
