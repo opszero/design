@@ -6,16 +6,12 @@ var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __copyProps = (to, from, except, desc) => {
-	if (from && typeof from === "object" || typeof from === "function") {
-		for (var keys = __getOwnPropNames(from), i = 0, n = keys.length, key; i < n; i++) {
-			key = keys[i];
-			if (!__hasOwnProp.call(to, key) && key !== except) {
-				__defProp(to, key, {
-					get: ((k) => from[k]).bind(null, key),
-					enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
-				});
-			}
-		}
+	if (from && typeof from === "object" || typeof from === "function") for (var keys = __getOwnPropNames(from), i = 0, n = keys.length, key; i < n; i++) {
+		key = keys[i];
+		if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, {
+			get: ((k) => from[k]).bind(null, key),
+			enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+		});
 	}
 	return to;
 };
@@ -27,6 +23,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 //#endregion
 require("react");
 let react_jsx_runtime = require("react/jsx-runtime");
+react_jsx_runtime = __toESM(react_jsx_runtime);
 
 //#region src/ContactPage.tsx
 function ContactPage({ calendlyLink = "https://calendly.com/opszero-llc/discovery" }) {
@@ -687,14 +684,6 @@ const cloudAIItems = [
 	{
 		label: "Kubespot - Your Kubernetes Team",
 		href: "https://kubespot.com"
-	},
-	{
-		label: "Deepfacts - Your AI Team",
-		href: "https://deepfacts.ai/"
-	},
-	{
-		label: "PolicyCop - Your Compliance Team",
-		href: "https://policycop.com"
 	},
 	{
 		label: "DBAZero - Database Performance Tuning",
