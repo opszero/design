@@ -656,20 +656,13 @@ function About({ headContent, authors }) {
 
 //#endregion
 //#region src/index.tsx
-const cloudAIItems = [
-	{
-		label: "Kubespot - Your Kubernetes Team",
-		href: "https://kubespot.com"
-	},
-	{
-		label: "DBAZero - Database Performance Tuning",
-		href: "https://dbazero.com"
-	},
-	{
-		label: "DiscountCloud - Up to 5% off your Cloud Bills",
-		href: "https://discountcloud.io/"
-	}
-];
+const cloudAIItems = [{
+	label: "Kubespot - Your Kubernetes Team",
+	href: "https://kubespot.com"
+}, {
+	label: "DiscountCloud - Up to 5% off your Cloud Bills",
+	href: "https://discountcloud.io/"
+}];
 const footerLinks = [
 	{
 		title: "Your Cloud + AI Team",
