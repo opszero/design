@@ -6,9 +6,9 @@ export { About } from "./about";
 
 export const cloudAIItems = [
     { label: 'Kubespot - Your Kubernetes Team', href: 'https://kubespot.com' },
-    //{ label: 'Deepfacts - Your AI Team', href: 'https://deepfacts.ai/' },
+    { label: 'Deepfacts - Your Data & AI Team', href: 'https://deepfacts.ai/' },
     //{ label: 'PolicyCop - Your Compliance Team', href: 'https://policycop.com' },
-    { label: 'DBAZero - Database Performance Tuning', href: 'https://dbazero.com' },
+    // { label: 'DBAZero - Database Performance Tuning', href: 'https://dbazero.com' },
     { label: 'DiscountCloud - Up to 5% off your Cloud Bills', href: 'https://discountcloud.io/' },
 ];
 

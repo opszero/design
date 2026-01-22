@@ -689,8 +689,8 @@ const cloudAIItems = [
 		href: "https://kubespot.com"
 	},
 	{
-		label: "DBAZero - Database Performance Tuning",
-		href: "https://dbazero.com"
+		label: "Deepfacts - Your Data & AI Team",
+		href: "https://deepfacts.ai/"
 	},
 	{
 		label: "DiscountCloud - Up to 5% off your Cloud Bills",
